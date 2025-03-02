@@ -19,3 +19,15 @@
 .btn-primary:hover {
   filter: brightness(1.1);
 }
+/* Example high-contrast styles */
+.high-contrast {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+/* Or a more targeted approach:
+.high-contrast body,
+.high-contrast .some-container {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+*/

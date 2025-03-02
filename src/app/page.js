@@ -3,6 +3,8 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import AccessibilityWidget from '../components/AccessibilityWidget';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
+
 
 console.log('Header:', Header);
 console.log('Footer:', Footer);
@@ -88,9 +90,11 @@ export default function Home() {
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 1.5, duration: 0.8 }}
             >
+              <Link href="/contact">
               <button className="bg-purple-600 text-white py-2 px-6 rounded hover:bg-purple-700 transition">
                 Get in Touch
               </button>
+              </Link>
             </motion.div>
           </div>
         </section>
