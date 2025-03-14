@@ -116,7 +116,7 @@ export default function About() {
               transition={{ duration: 0.8 }}
               className="p-6 border rounded-lg shadow-sm"
             >
-              <h3 className="text-4xl font-bold text-purple-600 mb-2">10k+</h3>
+              <h3 className="text-4xl font-bold text-purple-600 mb-2">200+</h3>
               <p className="text-gray-700">Clients Served</p>
             </motion.div>
             <motion.div
@@ -126,7 +126,7 @@ export default function About() {
               transition={{ duration: 0.8, delay: 0.1 }}
               className="p-6 border rounded-lg shadow-sm"
             >
-              <h3 className="text-4xl font-bold text-purple-600 mb-2">500+</h3>
+              <h3 className="text-4xl font-bold text-purple-600 mb-2">250+</h3>
               <p className="text-gray-700">Professional Carers</p>
             </motion.div>
             <motion.div
@@ -136,7 +136,7 @@ export default function About() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="p-6 border rounded-lg shadow-sm"
             >
-              <h3 className="text-4xl font-bold text-purple-600 mb-2">50+</h3>
+              <h3 className="text-4xl font-bold text-purple-600 mb-2">3+</h3>
               <p className="text-gray-700">Local Authorities & Partners</p>
             </motion.div>
           </div>
@@ -181,14 +181,14 @@ export default function About() {
         <div className="flex justify-center mb-4">
           <Image
             src="/Mary.png" // Update this path to your actual image
-            alt="Jane Doe"
+            alt="Mary Idele"
             width={120}
             height={120}
             className="rounded-full object-cover"
           />
         </div>
         <h3 className="text-xl font-semibold mb-2 text-gray-800">Mary Alile Idele</h3>
-        <p className="text-purple-600 mb-2">Director & CQC Registered Manager</p>
+        <p className="text-purple-600 mb-2">CQC Registered Manager and Director</p>
         <p className="text-gray-700">
           "Our mission is to provide holistic care that respects each client's
           individual needs and preferences. I'm proud to be part of a team that
@@ -208,14 +208,14 @@ export default function About() {
         <div className="flex justify-center mb-4">
           <Image
             src="/pius.jpg" // Update this path to your actual image
-            alt="John Smith"
+            alt="Pius Alile"
             width={120}
             height={120}
             className="rounded-full object-cover"
           />
         </div>
         <h3 className="text-xl font-semibold mb-2 text-gray-800">Pius Alile</h3>
-        <p className="text-purple-600 mb-2">Director of Strategy & Operations</p>
+        <p className="text-purple-600 mb-2">Care Consultant</p>
         <p className="text-gray-700">
           "Every day is an opportunity to make a difference. Whether it's a
           friendly chat or specialized care, we aim to bring comfort and joy

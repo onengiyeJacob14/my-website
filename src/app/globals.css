@@ -23,7 +23,17 @@
 .high-contrast {
   filter: invert(1) hue-rotate(180deg);
 }
-
+@keyframes shinyGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 /* Or a more targeted approach:
 .high-contrast body,
 .high-contrast .some-container {
@@ -31,3 +41,4 @@
   color: #fff !important;
 }
 */
+

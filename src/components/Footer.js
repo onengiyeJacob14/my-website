@@ -18,17 +18,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-6">
          {/* Column 1: Get In Touch */}
          <div>
-            {/* Logo */}
-            <div className="mb-4">
-              <Image
-                src="/livingglory-logo-c.png"
-                alt="Living Glory Social Care Logo"
-                width={150}
-                height={50}
-                className="object-contain"
-                priority
-              />
-            </div>
+           
             <h3 className="text-xl font-semibold mb-4">GET IN TOUCH</h3>
             <div className="flex items-start mb-2">
               <FaMapMarkerAlt className="text-white mr-2 mt-1" />
@@ -62,12 +52,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/our-technology" className="hover:underline">
-                  Our Technology &amp; AI
+                <Link href="/services" className="hover:underline">
+                  Our Services
                 </Link>
               </li>
               <li>
-                <Link href="/join-us" className="hover:underline">
+                <Link href="/careers" className="hover:underline">
                   Join Us
                 </Link>
               </li>
@@ -77,7 +67,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/news" className="hover:underline">
+                <Link href="/news-updates" className="hover:underline">
                   News
                 </Link>
               </li>
@@ -99,11 +89,11 @@ export default function Footer() {
             <h3 className="text-xl font-semibold mb-4">CONNECT WITH US</h3>
             <div className="flex items-center mb-2">
               <FaPhone className="text-white mr-2" />
-              <p>Call: 0300 133 1950</p>
+              <p>Call:  0121 679 6452</p>
             </div>
             <div className="flex items-center mb-2">
               <FaEnvelope className="text-white mr-2" />
-              <p>hello@ceracare.co.uk</p>
+              <p>info@livingglorysocialcare.com</p>
             </div>
             <div className="flex space-x-4 mt-2">
               <a
@@ -169,6 +159,12 @@ export default function Footer() {
             </Link>
             <Link href="/terms" className="hover:underline">
               Terms &amp; Conditions
+            </Link>
+            <Link href="/compliances" className="hover:underline">
+              compliances
+            </Link>
+            <Link href="/faqs" className="hover:underline">
+              faqs
             </Link>
             {/* Add more links if needed */}
           </div>

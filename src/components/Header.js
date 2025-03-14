@@ -13,8 +13,8 @@ export default function Header() {
           <Image
             src="/livingglory-logo-c.png"
             alt="Living Glory Social Care Logo"
-            width={80}  // Reduced width
-            height={30} // Reduced height
+            width={90}  // Reduced width
+            height={70} // Reduced height
             priority
           />
         </Link>

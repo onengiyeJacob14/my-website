@@ -12,31 +12,31 @@ export default function TeamPage() {
     {
       name: "Dr Mary Alile-Idele",
       role: "Director & CQC Registered Manager",
-      photo: "/Mary.png",
+      photo: "/documents/team/Mary.jpg",
       bio: "Dr Mary leads the overall vision, strategy, and growth of Living Glory Social Care.",
     },
     {
       name: "Mr Pius Alile",
       role: "Director of Strategy & Operation",
-      photo: "/pius.jpg",
+      photo: "/documents/team/pius.jpg",
       bio: "Mr Pius drives strategic partnerships and expansion initiatives across the UK.",
     },
     {
       name: "Olivia Lonngren",
       role: "Company Director | Pharmacist",
-      photo: "",
+      photo: "/documents/team/olivia.jpg",
       bio: "Olivia manages our care services, maintaining high-quality standards.",
     },
     {
       name: "Jessica Idele",
       role: "Senior Care Staff",
-      photo: "",
+      photo: "/documents/team/jessica.jpg",
       bio: "Patricia spearheads innovation and technology solutions for better care delivery.",
     },
     {
       name: "Osaretin Alile",
       role: "Vice President, Growth",
-      photo: "/Osas.png",
+      photo: "/documents/team/osas.jpg",
       bio: "Osaretin drives strategic partnerships and expansion initiatives across the UK.",
     },
     {
@@ -48,7 +48,7 @@ export default function TeamPage() {
     {
         name: "Jennifer Odighibor",
         role: "Senior Care Staff",
-        photo: "",
+        photo: "/documents/team/jennifer.jpg",
         bio: "Jennifer leads HR and talent development, nurturing a culture of compassion.",
       },
       {
