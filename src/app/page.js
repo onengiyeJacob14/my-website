@@ -66,7 +66,7 @@ export default function Home() {
           <div
             className="absolute inset-0"
             style={{
-              backgroundImage: "url('/homepage2.jpg')",
+              backgroundImage: "url('/Homepage2.jpg')",
               backgroundSize: "cover",
               backgroundPosition: "center",
               filter: "blur(2px) brightness(0.9)",
@@ -183,7 +183,7 @@ export default function Home() {
                 {/* Mary */}
                 <div className="flex flex-col items-center">
                   <Image
-                    src="/documents/team/mary.jpg"
+                    src="/documents/team/Mary.jpg"
                     alt="Dr Mary"
                     width={150}
                     height={150}
