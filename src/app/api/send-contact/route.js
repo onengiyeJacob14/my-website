@@ -7,10 +7,12 @@ export async function POST(request) {
 
     // Create a transporter with your Google Workspace credentials
     const transporter = nodemailer.createTransport({
-      service: "gmail",
+      host: "smtp.gmail.com",
+      port: 465,       // or 587 if you prefer
+      secure: true,    // true for port 465, false for 587
       auth: {
-        user: process.env.EMAIL_USER, // e.g. info@livingglorysocialcare.com
-        pass: process.env.EMAIL_PASS, // the Google Workspace App Password
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
       },
     });
 
