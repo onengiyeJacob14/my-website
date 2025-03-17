@@ -1,15 +1,12 @@
 "use client";
 
+import Link from "next/link";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import AccessibilityWidget from "../../components/AccessibilityWidget";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import {
-  FaHeart,
-  FaHandsHelping,
-  FaLightbulb,
-} from "react-icons/fa"; // Example icons for second section
+import { FaHeart, FaHandsHelping, FaLightbulb } from "react-icons/fa";
 
 export default function CareersPage() {
   return (
@@ -60,22 +57,29 @@ export default function CareersPage() {
                 placeholder="Find a job by title, town or postcode"
                 className="flex-grow focus:outline-none text-gray-700"
               />
-              <button className="text-white font-semibold bg-[#6818A5] hover:bg-[#8B2FC9] transition px-4 py-2 rounded ml-2">
-                <span role="img" aria-label="Search">
-                  🔍
-                </span>
-              </button>
+              {/* Wrap the 'Search' button in a Link to /contact */}
+              <Link href="/contact">
+                <button className="text-white font-semibold bg-[#6818A5] hover:bg-[#8B2FC9] transition px-4 py-2 rounded ml-2">
+                  <span role="img" aria-label="Search">
+                    🔍
+                  </span>
+                </button>
+              </Link>
             </motion.div>
 
-            {/* "Find a job near me" button (optional) */}
-            <motion.button
+            {/* "Find a job near me" button */}
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="mt-4 bg-[#6818A5] hover:bg-[#8B2FC9] transition text-white font-semibold py-2 px-6 rounded"
+              className="mt-4"
             >
-              FIND A JOB NEAR ME
-            </motion.button>
+              <Link href="/contact">
+                <button className="bg-[#6818A5] hover:bg-[#8B2FC9] transition text-white font-semibold py-2 px-6 rounded">
+                  FIND A JOB NEAR ME
+                </button>
+              </Link>
+            </motion.div>
           </div>
         </section>
 
@@ -161,7 +165,7 @@ export default function CareersPage() {
             </motion.div>
           </div>
 
-          {/* Optional CTA button below columns */}
+          {/* CTA button below columns */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -169,9 +173,11 @@ export default function CareersPage() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="mt-8"
           >
-            <button href="/about" className="bg-[#6818A5] hover:bg-[#8B2FC9] transition text-white font-semibold py-2 px-6 rounded">
-              WHY LIVING GLORY?
-            </button>
+            <Link href="/contact">
+              <button className="bg-[#6818A5] hover:bg-[#8B2FC9] transition text-white font-semibold py-2 px-6 rounded">
+                WHY LIVING GLORY?
+              </button>
+            </Link>
           </motion.div>
         </section>
 
@@ -218,7 +224,7 @@ export default function CareersPage() {
               className="bg-[#dbe7ff] rounded-2xl p-6 text-left shadow"
             >
               <div className="flex items-center mb-4">
-                <div className="w-8 h-8 flex items-center justify-center bg-[#9f6bdd] text-white rounded-full font-bold mr-3">
+                <div className="w-8 h-8 flex items-center justify-center bg-[#9f6bdd] text-white rounded-full font-bold mr=3">
                   2
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800">Interview</h3>
@@ -267,7 +273,7 @@ export default function CareersPage() {
               You build a special bond.
             </p>
             <div className="flex items-center justify-center mb-2">
-              {/* Simple squiggle (replace with an SVG or image if you like) */}
+              {/* Simple squiggle */}
               <span className="text-pink-400 mx-2">~ ~ ~</span>
             </div>
             <p className="text-2xl md:text-3xl font-bold text-[#6818A5]">
@@ -290,9 +296,11 @@ export default function CareersPage() {
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               Interested in working in care?
             </h3>
-            <button href="/contact"className="bg-white text-[#6818A5] font-semibold py-2 px-6 rounded hover:opacity-90 transition">
-              FIND A CARER JOB
-            </button>
+            <Link href="/contact">
+              <button className="bg-white text-[#6818A5] font-semibold py-2 px-6 rounded hover:opacity-90 transition">
+                FIND A CARER JOB
+              </button>
+            </Link>
           </motion.div>
         </section>
       </main>

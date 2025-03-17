@@ -6,6 +6,8 @@ import {
   FaMapMarkerAlt,
   FaPhone,
   FaEnvelope,
+  FaClock,
+
 } from "react-icons/fa";
 
 export default function ContactDetailsSection() {
