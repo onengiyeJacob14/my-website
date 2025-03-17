@@ -3,6 +3,9 @@ import "./globals.css";
 export const metadata = {
   title: 'Living Glory Social Care',
   description: 'Providing compassionate domiciliary care since 2012.',
+  icons: {
+    icon: "/livingglory-logo-c.png", // or .ico if you have that
+  },
 };
 
 export default function RootLayout({ children }) {

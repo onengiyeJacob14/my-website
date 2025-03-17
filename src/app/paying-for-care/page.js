@@ -31,35 +31,37 @@ export default function PayingForCarePage() {
               className="text-gray-700 leading-relaxed space-y-4"
             >
               <p>
-                <strong>Direct payments</strong><br />
-                If you or a family member receives care and support through your local Council, 
-                you may be entitled to a ‘direct payment’. This is money, which is paid by the 
-                Council to you directly, for you to spend on your care and support. 
+                <strong>Direct payments</strong>
+                <br />
+                If you or a family member receives care and support through your local Council,
+                you may be entitled to a &lsquo;direct payment.&rsquo; This is money, which is paid
+                by the Council to you directly, for you to spend on your care and support.
               </p>
               <p>
-                If you do have a direct payment, you can choose to use this to fully, or partially, 
-                cover your home care costs. Depending on the type of support that you want, and the 
-                amount paid to you as direct payment, you may need to pay for some of your costs 
+                If you do have a direct payment, you can choose to use this to fully, or partially,
+                cover your home care costs. Depending on the type of support that you want, and the
+                amount paid to you as direct payment, you may need to pay for some of your costs
                 of care yourself.
               </p>
               <p>
-                Not everybody is entitled to Direct Payments from their local Council. To find out 
-                if you are eligible, or for more information on direct payments and your 
-                circumstances, get in touch with your local authority’s Adult Social Care department.
+                Not everybody is entitled to Direct Payments from their local Council. To find out
+                if you are eligible, or for more information on direct payments and your
+                circumstances, get in touch with your local authority&rsquo;s Adult Social Care department.
               </p>
 
               <p>
-                <strong>Private funding</strong><br />
-                If you are not receiving financial support from your local Council to access care 
+                <strong>Private funding</strong>
+                <br />
+                If you are not receiving financial support from your local Council to access care
                 services, you will need to pay for your own care and support.
               </p>
               <p>
-                There are many different ways we can help you to access information and advice 
-                to decide what the best option is for you in terms of the type, and amount, of 
+                There are many different ways we can help you to access information and advice
+                to decide what the best option is for you in terms of the type, and amount, of
                 care you receive, and how this can fit with your personal circumstances.
               </p>
               <p>
-                Get in touch with our team at Living Glory to have a chat through what you think 
+                Get in touch with our team at Living Glory to have a chat through what you think
                 would work for you, and to find out more about different pricing options.
               </p>
             </motion.div>

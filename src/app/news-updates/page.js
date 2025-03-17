@@ -266,7 +266,7 @@ export default function NewsUpdatesPage() {
                       EJIROGHENE MUDIAGA-ORTIS
                     </p>
                     <p className="text-sm text-center">
-                      Above &amp; beyond in ensuring person-centered care.
+                      Above &amp; beyond in ensuring person-centered&nbsp;care.
                     </p>
                   </div>
                   {/* Nora */}
@@ -368,11 +368,26 @@ export default function NewsUpdatesPage() {
 
                 <p className="font-semibold mb-2">Management Contacts:</p>
                 <ul className="space-y-2">
-                  <li>Jessica Idele (Quality Improvement Manager / Field Care Supervisor) — jessica@livingglorysocialcare.com</li>
-                  <li>Pius Alile (Director of Strategy &amp; Operation) — pius@livingglorysocialcare.com</li>
-                  <li>Doyin Ogunmeru (Senior Care Staff) — doyin.ogunmeru@livingglorysocialcare.com</li>
-                  <li>Jennifer Odighibor (Senior Care Staff) — jennifer@livingglorysocialcare.com</li>
-                  <li>Samuel Ekun (Staffing Coordinator &amp; Services Officer) — samuel.ekun@livingglorysocialcare.com</li>
+                  <li>
+                    Jessica Idele (Quality Improvement Manager / Field Care Supervisor)
+                    &mdash; jessica@livingglorysocialcare.com
+                  </li>
+                  <li>
+                    Pius Alile (Director of Strategy &amp; Operation)
+                    &mdash; pius@livingglorysocialcare.com
+                  </li>
+                  <li>
+                    Doyin Ogunmeru (Senior Care Staff)
+                    &mdash; doyin.ogunmeru@livingglorysocialcare.com
+                  </li>
+                  <li>
+                    Jennifer Odighibor (Senior Care Staff)
+                    &mdash; jennifer@livingglorysocialcare.com
+                  </li>
+                  <li>
+                    Samuel Ekun (Staffing Coordinator &amp; Services Officer)
+                    &mdash; samuel.ekun@livingglorysocialcare.com
+                  </li>
                 </ul>
               </motion.div>
 
@@ -388,11 +403,11 @@ export default function NewsUpdatesPage() {
                   Final Notes
                 </h3>
                 <p className="mb-4">
-                  As we embrace the new season, let’s continue working together
+                  As we embrace the new season, let&apos;s continue working together
                   to provide the best care for our clients! On behalf of the
                   team at Living Glory Social Care, we appreciate everything
                   that you do. If you have any questions or need assistance,
-                  don’t hesitate to reach out. Wishing you all a wonderful and
+                  don&apos;t hesitate to reach out. Wishing you all a wonderful and
                   productive Spring!
                 </p>
                 <div className="border-t border-gray-300 pt-4">

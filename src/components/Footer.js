@@ -16,9 +16,8 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4">
         {/* Top Section: 4 Columns */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-6">
-         {/* Column 1: Get In Touch */}
-         <div>
-           
+          {/* Column 1: Get In Touch */}
+          <div>
             <h3 className="text-xl font-semibold mb-4">GET IN TOUCH</h3>
             <div className="flex items-start mb-2">
               <FaMapMarkerAlt className="text-white mr-2 mt-1" />
@@ -89,7 +88,7 @@ export default function Footer() {
             <h3 className="text-xl font-semibold mb-4">CONNECT WITH US</h3>
             <div className="flex items-center mb-2">
               <FaPhone className="text-white mr-2" />
-              <p>Call:  0121 679 6452</p>
+              <p>Call: 0121 679 6452</p>
             </div>
             <div className="flex items-center mb-2">
               <FaEnvelope className="text-white mr-2" />
@@ -138,20 +137,19 @@ export default function Footer() {
               {/* Another Example Logo */}
               <Image
                 src="/ciw-logo.png"
-                alt="Care Inspectorate Wales"
+                alt="Home Care Assosiation"
                 width={80}
                 height={40}
                 className="object-contain"
               />
             </div>
-            {/* Add more logos or text as needed */}
           </div>
         </div>
 
         {/* Bottom Section: Privacy Policy, etc. */}
         <div className="border-t border-white border-opacity-20 pt-4 flex flex-col md:flex-row items-center justify-between text-sm">
           <p className="mb-2 md:mb-0">
-            © 2023 Living Glory Social Care. All rights reserved.
+            &copy; 2025 Living Glory Social Care. All rights reserved.
           </p>
           <div className="flex space-x-4">
             <Link href="/policies" className="hover:underline">
@@ -161,12 +159,11 @@ export default function Footer() {
               Terms &amp; Conditions
             </Link>
             <Link href="/compliances" className="hover:underline">
-              compliances
+              Compliances
             </Link>
             <Link href="/faqs" className="hover:underline">
-              faqs
+              Faqs
             </Link>
-            {/* Add more links if needed */}
           </div>
         </div>
       </div>

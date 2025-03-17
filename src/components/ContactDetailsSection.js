@@ -50,10 +50,13 @@ export default function ContactDetailsSection() {
 
   return (
     <section className="py-12 px-4 md:px-8 lg:px-16 bg-white">
-      {/* LEFT COLUMN code remains unchanged... */}
-      
-      {/* RIGHT COLUMN: Metallic Gradient Form */}
-      <motion.div /* ...existing motion props... */
+      {/* Example: Left column or additional details could go here if needed */}
+      {/* Right column: Metallic Gradient Form */}
+      <motion.div
+        initial={{ opacity: 0, x: 30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
         className="p-6 rounded-md bg-gradient-to-b from-[#6818A5] to-[#8B2FC9] text-white flex flex-col"
       >
         <h3 className="text-2xl md:text-3xl font-bold mb-4">Fill The Form</h3>

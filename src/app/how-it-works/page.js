@@ -10,7 +10,7 @@ export default function HowItWorks() {
       <main className="flex-grow container mx-auto p-4">
         <h1 className="text-3xl font-bold mb-4">How It Works</h1>
         <p>
-          Our process is simple: Initial Discussion, Care Plan Creation, Caregiver Matching, and Ongoing Support & Monitoring.
+          Our process is simple Initial Discussion, Care Plan Creation, Caregiver Matching, and Ongoing Support & Monitoring.
         </p>
         {/* Add more detailed steps and visuals here */}
       </main>

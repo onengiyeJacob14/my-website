@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
-import AccessibilityWidget from '../../components/AccessibilityWidget';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import AccessibilityWidget from "../../components/AccessibilityWidget";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function About() {
   return (
@@ -137,104 +137,104 @@ export default function About() {
               className="p-6 border rounded-lg shadow-sm"
             >
               <h3 className="text-4xl font-bold text-purple-600 mb-2">3+</h3>
-              <p className="text-gray-700">Local Authorities & Partners</p>
+              <p className="text-gray-700">Local Authorities &amp; Partners</p>
             </motion.div>
           </div>
         </section>
 
         {/* Team / Testimonials Section */}
-<section className="py-12 px-4 md:px-8 lg:px-16 bg-gray-50">
-  <div className="max-w-5xl mx-auto">
-    <motion.h2
-      initial={{ opacity: 0, x: -30 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.8 }}
-      className="text-3xl font-bold mb-6 text-gray-800"
-    >
-      Meet Our Team
-    </motion.h2>
-    <motion.p
-      initial={{ opacity: 0, x: 30 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.8 }}
-      className="text-gray-700 leading-relaxed mb-8"
-    >
-      Our team comprises compassionate care professionals, experienced managers,
-      and dedicated support staff who share a common goal: to improve lives
-      through exceptional care. We invest in continuous training and development,
-      ensuring that each team member upholds our high standards and core values.
-    </motion.p>
+        <section className="py-12 px-4 md:px-8 lg:px-16 bg-gray-50">
+          <div className="max-w-5xl mx-auto">
+            <motion.h2
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="text-3xl font-bold mb-6 text-gray-800"
+            >
+              Meet Our Team
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="text-gray-700 leading-relaxed mb-8"
+            >
+              Our team comprises compassionate care professionals, experienced managers,
+              and dedicated support staff who share a common goal: to improve lives
+              through exceptional care. We invest in continuous training and development,
+              ensuring that each team member upholds our high standards and core values.
+            </motion.p>
 
-    {/* Team Cards */}
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      {/* Example Card 1 */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="p-6 bg-white border rounded-lg shadow-sm"
-      >
-        {/* Team Member Photo */}
-        <div className="flex justify-center mb-4">
-          <Image
-            src="/Mary.png" // Update this path to your actual image
-            alt="Mary Idele"
-            width={120}
-            height={120}
-            className="rounded-full object-cover"
-          />
-        </div>
-        <h3 className="text-xl font-semibold mb-2 text-gray-800">Mary Alile Idele</h3>
-        <p className="text-purple-600 mb-2">CQC Registered Manager and Director</p>
-        <p className="text-gray-700">
-          "Our mission is to provide holistic care that respects each client's
-          individual needs and preferences. I'm proud to be part of a team that
-          genuinely puts people first."
-        </p>
-      </motion.div>
+            {/* Team Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Example Card 1 */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+                className="p-6 bg-white border rounded-lg shadow-sm"
+              >
+                {/* Team Member Photo */}
+                <div className="flex justify-center mb-4">
+                  <Image
+                    src="/Mary.png"
+                    alt="Mary Idele"
+                    width={120}
+                    height={120}
+                    className="rounded-full object-cover"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">Mary Alile Idele</h3>
+                <p className="text-purple-600 mb-2">CQC Registered Manager and Director</p>
+                <p className="text-gray-700">
+                  &quot;Our mission is to provide holistic care that respects each client&apos;s
+                  individual needs and preferences. I&apos;m proud to be part of a team that
+                  genuinely puts people first.&quot;
+                </p>
+              </motion.div>
 
-      {/* Example Card 2 */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8, delay: 0.1 }}
-        className="p-6 bg-white border rounded-lg shadow-sm"
-      >
-        {/* Team Member Photo */}
-        <div className="flex justify-center mb-4">
-          <Image
-            src="/pius.jpg" // Update this path to your actual image
-            alt="Pius Alile"
-            width={120}
-            height={120}
-            className="rounded-full object-cover"
-          />
-        </div>
-        <h3 className="text-xl font-semibold mb-2 text-gray-800">Pius Alile</h3>
-        <p className="text-purple-600 mb-2">Care Consultant</p>
-        <p className="text-gray-700">
-          "Every day is an opportunity to make a difference. Whether it's a
-          friendly chat or specialized care, we aim to bring comfort and joy
-          to those we serve."
-        </p>
-      </motion.div>
-    </div>
+              {/* Example Card 2 */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                className="p-6 bg-white border rounded-lg shadow-sm"
+              >
+                {/* Team Member Photo */}
+                <div className="flex justify-center mb-4">
+                  <Image
+                    src="/pius.jpg"
+                    alt="Pius Alile"
+                    width={120}
+                    height={120}
+                    className="rounded-full object-cover"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">Pius Alile</h3>
+                <p className="text-purple-600 mb-2">Care Consultant</p>
+                <p className="text-gray-700">
+                  &quot;Every day is an opportunity to make a difference. Whether it&apos;s a
+                  friendly chat or specialized care, we aim to bring comfort and joy
+                  to those we serve.&quot;
+                </p>
+              </motion.div>
+            </div>
 
-    {/* Button to All Team Members */}
-    <div className="text-center mt-8">
-      <a
-        href="/team" // Update to your actual team page route
-        className="inline-block bg-purple-600 text-white py-2 px-6 rounded hover:bg-purple-700 transition"
-      >
-        Our Community
-      </a>
-    </div>
-  </div>
-</section>
+            {/* Button to All Team Members */}
+            <div className="text-center mt-8">
+              <a
+                href="/team"
+                className="inline-block bg-purple-600 text-white py-2 px-6 rounded hover:bg-purple-700 transition"
+              >
+                Our Community
+              </a>
+            </div>
+          </div>
+        </section>
 
         {/* Call to Action */}
         <section className="py-12 px-4 md:px-8 lg:px-16 bg-white">

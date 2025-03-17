@@ -27,18 +27,18 @@ export default function Home() {
     },
     {
       title: "New Website Coming Soon",
-      text: "We’re launching a new website by March 2025. Stay tuned for more updates!",
+      text: "We\'re launching a new website by March 2025. Stay tuned for more updates!",
     },
     {
       title: "Away Days",
-      text: "We’re introducing Away Days to help staff unwind, connect, and recharge outside work.",
+      text: "We\'re introducing Away Days to help staff unwind, connect, and recharge outside work.",
     },
   ]);
 
   // Current snippet index
   const [carouselIndex, setCarouselIndex] = useState(0);
 
-  // Rotate snippet automatically every 1 minute (60000 ms)
+  // Rotate snippet automatically every 20 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCarouselIndex((prev) => (prev + 1) % carouselData.length);
@@ -228,7 +228,7 @@ export default function Home() {
                 </h4>
                 <p className="text-[#b36b00]">
                   Did you know that a single act of kindness can significantly boost
-                  mental well-being? Whether it’s a compliment, a smile, or a helping
+                  mental well-being? Whether it\'s a compliment, a smile, or a helping
                   hand, your support can make a big difference to our clients and your
                   colleagues!
                 </p>

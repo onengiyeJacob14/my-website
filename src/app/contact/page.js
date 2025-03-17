@@ -7,7 +7,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import ContactDetailsSection from "../../components/ContactDetailsSection";
 
-
 export default function ContactPage() {
   return (
     <div className="min-h-screen flex flex-col">

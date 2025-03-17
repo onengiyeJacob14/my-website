@@ -1,18 +1,19 @@
-// src/app/blog/page.js
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
-import AccessibilityWidget from '../../components/AccessibilityWidget';
+"use client";
 
-export default function Contact() {
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import AccessibilityWidget from "../../components/AccessibilityWidget";
+
+export default function Blog() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow container mx-auto p-4">
-        <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
+        <h1 className="text-3xl font-bold mb-4">Our Blog</h1>
         <p>
-          You can reach us via phone, email, or by filling out the contact form below.
+          Welcome to our blog! You can share your latest posts or updates here.
         </p>
-        {/* Embed a contact form component or code here */}
+        {/* Add your blog list or content here */}
       </main>
       <Footer />
       <AccessibilityWidget />

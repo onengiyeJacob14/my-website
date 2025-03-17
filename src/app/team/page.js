@@ -31,7 +31,7 @@ export default function TeamPage() {
       name: "Jessica Idele",
       role: "Senior Care Staff",
       photo: "/documents/team/jessica.jpg",
-      bio: "Patricia spearheads innovation and technology solutions for better care delivery.",
+      bio: "Jessica spearheads innovation and technology solutions for better care delivery.",
     },
     {
       name: "Osaretin Alile",
@@ -42,21 +42,21 @@ export default function TeamPage() {
     {
       name: "Doyin Ogunmeru",
       role: "Senior Care Staff",
-      photo: "/Doyin.png",
+      photo: "/documents/team/doyin.png",
       bio: "Doyin leads HR and talent development, nurturing a culture of compassion.",
     },
     {
-        name: "Jennifer Odighibor",
-        role: "Senior Care Staff",
-        photo: "/documents/team/jennifer.jpg",
-        bio: "Jennifer leads HR and talent development, nurturing a culture of compassion.",
-      },
-      {
-        name: "Samuel Ekun",
-        role: "Senior Care Staff",
-        photo: "",
-        bio: "Sam leads HR and talent development, nurturing a culture of compassion.",
-      },
+      name: "Jennifer Odighibor",
+      role: "Senior Care Staff",
+      photo: "/documents/team/jennifer.jpg",
+      bio: "Jennifer leads HR and talent development, nurturing a culture of compassion.",
+    },
+    {
+      name: "Samuel Ekun",
+      role: "Senior Care Staff",
+      photo: "/documents/team/samuel.jpg", // Provide the correct image path or leave blank if unavailable
+      bio: "Sam leads HR and talent development, nurturing a culture of compassion.",
+    },
     // Add more team members as needed
   ];
 
@@ -103,12 +103,20 @@ export default function TeamPage() {
                 >
                   {/* Member Photo */}
                   <div className="relative w-32 h-32 mb-4">
-                    <Image
-                      src={member.photo}
-                      alt={member.name}
-                      fill
-                      className="object-cover rounded-full grayscale hover:grayscale-0 transition duration-300"
-                    />
+                    {member.photo ? (
+                      <Image
+                        src={member.photo}
+                        alt={member.name}
+                        fill
+                        className="object-cover rounded-full grayscale hover:grayscale-0 transition duration-300"
+                      />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center bg-gray-200 rounded-full">
+                        <span className="text-gray-500 text-sm">
+                          No Photo
+                        </span>
+                      </div>
+                    )}
                   </div>
                   {/* Member Info */}
                   <h3

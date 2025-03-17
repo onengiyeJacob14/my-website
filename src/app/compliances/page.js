@@ -116,7 +116,7 @@ export default function CompliancesPage() {
                 href="/contact"
                 className="text-purple-700 underline"
               >
-                contact us
+                Contact us
               </a>
               .
             </motion.p>

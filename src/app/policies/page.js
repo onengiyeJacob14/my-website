@@ -43,7 +43,7 @@ export default function PoliciesPage() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-gray-700 text-lg md:text-xl leading-relaxed mt-4"
             >
-              If you have any concerns or questions, please contact us: 
+              If you have any concerns or questions, please contact us:
               <br />
               <strong>Phone:</strong> 0121 679 6452
               <br />
@@ -67,18 +67,19 @@ export default function PoliciesPage() {
               </h2>
               <p className="text-gray-700 leading-relaxed">
                 As part of the services we offer, we are required to process
-                personal data about you. “Processing” can mean collecting,
+                personal data about you. &quot;Processing&quot; can mean collecting,
                 recording, organising, storing, sharing, or destroying data.
-                We’re committed to being transparent about why we need your
+                We&apos;re committed to being transparent about why we need your
                 personal data and what we do with it.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                If you have any concerns or questions please contact us: 
-                <strong>0121 679 6452</strong>, 
-                Email: <strong>info@livingglorysocialcare.com</strong>
+                If you have any concerns or questions please contact us:
+                <strong> 0121 679 6452</strong>, Email:{" "}
+                <strong>info@livingglorysocialcare.com</strong>
               </p>
               <p className="text-gray-700 leading-relaxed">
-                <strong>What data do we have?</strong><br />
+                <strong>What data do we have?</strong>
+                <br />
                 So that we can provide a safe and professional service, we need
                 to keep certain records about you. We may process the following
                 types of data:
@@ -102,7 +103,8 @@ export default function PoliciesPage() {
                 </li>
               </ul>
               <p className="text-gray-700 leading-relaxed">
-                <strong>Why do we have this data?</strong><br />
+                <strong>Why do we have this data?</strong>
+                <br />
                 We need this data so that we can provide high-quality care and
                 support. By law, we need to have a lawful basis for processing
                 your personal data, such as legal obligations under the Health
@@ -128,7 +130,8 @@ export default function PoliciesPage() {
                 </li>
               </ul>
               <p className="text-gray-700 leading-relaxed">
-                <strong>Where do we process your data?</strong><br />
+                <strong>Where do we process your data?</strong>
+                <br />
                 This data is collected from or shared with you, your
                 representative(s), or third parties (local hospitals, GP,
                 pharmacy, social workers, local authority, etc.). We do this face
@@ -191,8 +194,8 @@ export default function PoliciesPage() {
               <p className="text-gray-700 leading-relaxed">
                 We keep certain records about you as staff to ensure we can
                 contact you, pay you, and provide necessary training. This may
-                include personal details, financial details, and “special
-                category” data like health information if required.
+                include personal details, financial details, and &ldquo;special
+                category&rdquo; data like health information if required.
               </p>
               <p className="text-gray-700 leading-relaxed">
                 We process your data because of legal obligations under UK
@@ -248,9 +251,7 @@ export default function PoliciesPage() {
               transition={{ duration: 0.8 }}
               className="space-y-4"
             >
-              <h2 className="text-2xl font-bold text-gray-800">
-                Your rights
-              </h2>
+              <h2 className="text-2xl font-bold text-gray-800">Your rights</h2>
               <p className="text-gray-700 leading-relaxed">
                 The data we keep about you is your data. We ensure we keep it
                 confidential and use it appropriately. You have the right to:
@@ -283,13 +284,16 @@ export default function PoliciesPage() {
                 possible, at the latest within one month.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                <strong>Complaints:</strong> If you’re unhappy with how we’ve
+                <strong>Complaints:</strong> If you&apos;re unhappy with how we&apos;ve
                 handled your request, contact:
               </p>
               <address className="not-italic text-gray-700">
-                Information Commissioner’s Office <br />
-                Wycliffe House, Water Lane <br />
-                Wilmslow, Cheshire SK9 5AF <br />
+                Information Commissioner&apos;s Office
+                <br />
+                Wycliffe House, Water Lane
+                <br />
+                Wilmslow, Cheshire SK9 5AF
+                <br />
                 <a
                   href="https://ico.org.uk/global/contact-us/"
                   target="_blank"

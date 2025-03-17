@@ -68,8 +68,8 @@ export default function ServicesPage() {
           {/* <div className="absolute inset-0 bg-[url('/services-hero.jpg')] bg-cover bg-center opacity-20" /> */}
         </section>
 
-  {/* NEW Showcase Section */}
-  <section className="py-12 px-4 md:px-8 lg:px-16 bg-white">
+        {/* NEW Showcase Section */}
+        <section className="py-12 px-4 md:px-8 lg:px-16 bg-white">
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             {/* Left: Image Collage */}
             <motion.div
@@ -114,13 +114,13 @@ export default function ServicesPage() {
                 Our team of{" "}
                 <span className="text-purple-700">dedicated</span> and{" "}
                 <span className="text-purple-700">compassionate</span> specialists
-                delivers exceptional care to communities throughout the West
-                 Midlands..
+                delivers exceptional care to communities throughout the&nbsp;West
+                &nbsp;Midlands..
               </h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
                 We believe that from one individual need to a more detailed task,
                 no job is too small. Our approach is focused on delivering
-                holistic, person-centered care that respects each client’s
+                holistic, person-centered care that respects each client&apos;s
                 independence and preferences.
               </p>
               <p className="text-gray-700 leading-relaxed">
@@ -132,9 +132,10 @@ export default function ServicesPage() {
           </div>
         </section>
 
-         {/* New Tabbed Services Section */}
-         <ServicesTabs />
-           {/* CTA Section (Reference-style) */}
+        {/* New Tabbed Services Section */}
+        <ServicesTabs />
+
+        {/* CTA Section (Reference-style) */}
         <section className="py-12 px-4 md:px-8 lg:px-16 bg-white text-center">
           <div className="max-w-3xl mx-auto">
             <p className="text-gray-700 text-lg md:text-xl mb-6">
