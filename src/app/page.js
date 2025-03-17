@@ -183,7 +183,7 @@ export default function Home() {
                 {/* Mary */}
                 <div className="flex flex-col items-center">
                   <Image
-                    src="/documents/team/mary.jpg"
+                    src="/documents/team/Mary.jpg"
                     alt="Dr Mary"
                     width={150}
                     height={150}
