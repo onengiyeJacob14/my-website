@@ -6,6 +6,8 @@ export const metadata = {
   icons: {
     icon: "/livingglory-logo-c.png", // or .ico if you have that
   },
+// Add the line below:
+viewport: 'width=device-width, initial-scale=1.0',
 };
 
 export default function RootLayout({ children }) {

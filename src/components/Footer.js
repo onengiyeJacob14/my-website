@@ -136,7 +136,7 @@ export default function Footer() {
               />
               {/* Another Example Logo */}
               <Image
-                src="/ciw-logo.png"
+                src="/HomeCare.png"
                 alt="Home Care Assosiation"
                 width={80}
                 height={40}

@@ -169,7 +169,7 @@ export default function CareersPage() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="mt-8"
           >
-            <button className="bg-[#6818A5] hover:bg-[#8B2FC9] transition text-white font-semibold py-2 px-6 rounded">
+            <button href="/about" className="bg-[#6818A5] hover:bg-[#8B2FC9] transition text-white font-semibold py-2 px-6 rounded">
               WHY LIVING GLORY?
             </button>
           </motion.div>
@@ -290,7 +290,7 @@ export default function CareersPage() {
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               Interested in working in care?
             </h3>
-            <button className="bg-white text-[#6818A5] font-semibold py-2 px-6 rounded hover:opacity-90 transition">
+            <button href="/contact"className="bg-white text-[#6818A5] font-semibold py-2 px-6 rounded hover:opacity-90 transition">
               FIND A CARER JOB
             </button>
           </motion.div>

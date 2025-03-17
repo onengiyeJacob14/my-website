@@ -11,51 +11,51 @@ export default function TeamPage() {
   const teamMembers = [
     {
       name: "Dr Mary Alile-Idele",
-      role: "Director & CQC Registered Manager",
+      role: "Owner | Director & CQC Registered Manager",
       photo: "/documents/team/Mary.jpg",
       bio: "Dr Mary leads the overall vision, strategy, and growth of Living Glory Social Care.",
     },
     {
       name: "Mr Pius Alile",
-      role: "Director of Strategy & Operation",
+      role: "Owner | Care Consultant",
       photo: "/documents/team/pius.jpg",
-      bio: "Mr Pius drives strategic partnerships and expansion initiatives across the UK.",
+    
     },
     {
       name: "Olivia Lonngren",
-      role: "Company Director | Pharmacist",
+      role: "Junior Director of Compliance | Operation | Pharmacist",
       photo: "/documents/team/olivia.jpg",
-      bio: "Olivia manages our care services, maintaining high-quality standards.",
+     
     },
     {
       name: "Jessica Idele",
-      role: "Senior Care Staff",
+      role: "Quality Improvement Manager | Field Care Supervisor | Social Worker",
       photo: "/documents/team/jessica.jpg",
-      bio: "Jessica spearheads innovation and technology solutions for better care delivery.",
+      
     },
     {
       name: "Osaretin Alile",
-      role: "Vice President, Growth",
+      role: "HR | Training Coordinator",
       photo: "/documents/team/osas.jpg",
-      bio: "Osaretin drives strategic partnerships and expansion initiatives across the UK.",
+      
     },
     {
       name: "Doyin Ogunmeru",
-      role: "Senior Care Staff",
+      role: "Care Coordinator | Payroll Manager",
       photo: "/documents/team/doyin.png",
-      bio: "Doyin leads HR and talent development, nurturing a culture of compassion.",
+      
     },
     {
       name: "Jennifer Odighibor",
-      role: "Senior Care Staff",
+      role: "Care Monitoring | Invoicing Officer",
       photo: "/documents/team/jennifer.jpg",
-      bio: "Jennifer leads HR and talent development, nurturing a culture of compassion.",
+      
     },
     {
       name: "Samuel Ekun",
-      role: "Senior Care Staff",
+      role: "Staffing Coordinator | Invoicing Officer",
       photo: "/documents/team/samuel.jpg", // Provide the correct image path or leave blank if unavailable
-      bio: "Sam leads HR and talent development, nurturing a culture of compassion.",
+      
     },
     // Add more team members as needed
   ];

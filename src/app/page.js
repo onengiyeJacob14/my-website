@@ -62,17 +62,17 @@ export default function Home() {
       <Header />
       <main className="flex-grow relative">
         {/* Hero Section */}
-        <section className="relative h-screen flex items-center overflow-hidden">
+        <section className="relative h-[75vh] md:h-screen flex items-center overflow-hidden">
           <div
             className="absolute inset-0"
             style={{
-              backgroundImage: "url('/homepage2.jpg')",
+              backgroundImage: "url('/Homepage2.jpg')",
               backgroundSize: "cover",
               backgroundPosition: "center",
               filter: "blur(2px) brightness(0.9)",
             }}
           />
-          <div className="relative z-10 pl-6 pr-4 text-left text-white max-w-xl">
+          <div className="relative z-10 p- 4 md:pl-6 md:pr-4 text-left text-white max-w-md md:max-w-xl">
             {/* Main Heading */}
             <motion.h1
               initial={{ y: -50, opacity: 0 }}
