@@ -49,7 +49,18 @@ export default function CompliancesPage() {
               <li>
                 To view our <strong>Safeguarding Policy</strong>,{" "}
                 <a
-                  href="/documents/SafeguardingPolicy.pdf"
+                  href="/documents/AR01-Safeguarding Children and Child Protection Policy and Procedure (1).pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-purple-700 underline"
+                >
+                  click here
+                </a>
+              </li>
+              <li>
+                To view our <strong>Safeguarding Adults Policy</strong>,{" "}
+                <a
+                  href="/documents/CR74-Safeguarding Adults Policy and Procedure (1).pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-purple-700 underline"
@@ -60,7 +71,7 @@ export default function CompliancesPage() {
               <li>
                 To view our <strong>CQC Standards &amp; Compliance</strong>,{" "}
                 <a
-                  href="/documents/CQCStandards.pdf"
+                  href="/documents/QQ03-Complaints, Suggestions and Compliments Policy and Procedure (1).pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-purple-700 underline"
@@ -71,7 +82,7 @@ export default function CompliancesPage() {
               <li>
                 To view our <strong>Complaints Procedure</strong>,{" "}
                 <a
-                  href="/documents/ComplaintsProcedure.pdf"
+                  href="/documents/QQ03-Complaints, Suggestions and Compliments Policy and Procedure (1).pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-purple-700 underline"
@@ -80,9 +91,9 @@ export default function CompliancesPage() {
                 </a>
               </li>
               <li>
-                To view our <strong>Service User Guide</strong>,{" "}
+                To view our <strong>LGSC Service User Guide</strong>,{" "}
                 <a
-                  href="/documents/ServiceUserGuide.pdf"
+                  href="/documents/LGSC SERVICE USER GUIDE.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-purple-700 underline"
@@ -93,7 +104,7 @@ export default function CompliancesPage() {
               <li>
                 To view our <strong>Privacy Statement and GDPR Compliance</strong>,{" "}
                 <a
-                  href="/documents/PrivacyStatement.pdf"
+                  href="/documents/Privacy Notice.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-purple-700 underline"

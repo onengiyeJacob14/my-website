@@ -80,6 +80,10 @@ export default function Footer() {
                   Contact Us
                 </Link>
               </li>
+              <li>
+              CQC Prover ID: 1-232412428
+              CQC Location ID: 1-494758312
+              </li>
             </ul>
           </div>
 
