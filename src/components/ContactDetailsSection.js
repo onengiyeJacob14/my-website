@@ -89,6 +89,15 @@ export default function ContactDetailsSection() {
             </div>
           </div>
 
+           {/* Opening Hours */}
+           <div className="flex items-start space-x-3">
+            <FaClock className="text-[#6818A5] mt-1" size={24} />
+            <div>
+              <h4 className="font-semibold text-lg">Opening Hours</h4>
+              <p className="text-sm">Monday - Friday : 9:00am - 17:00</p>
+            </div>
+          </div>
+
           {/* Phone */}
           <div className="flex items-start space-x-3">
             <FaPhone className="text-[#6818A5] mt-1" size={24} />
