@@ -24,7 +24,7 @@ export default function ServicesTabs() {
           label: "Personal",
           icon: <FaUserNurse />,
           title: "Personal Care",
-          image: "/services-personal.webp",
+          
           description:
             "Our care experts can support you with a range of daily tasks in your home which might include:",
           tasks: [
@@ -39,7 +39,7 @@ export default function ServicesTabs() {
           label: "Practical",
           icon: <FaHandsHelping />,
           title: "Practical Support",
-          image: "/services-practical.webp",
+          
           description:
             "We help you with day-to-day tasks that ensure a comfortable, safe home environment:",
           tasks: [
@@ -54,7 +54,7 @@ export default function ServicesTabs() {
           label: "Companionship",
           icon: <FaHeart />,
           title: "Companionship Care",
-          image: "/services-hero.jpg",
+          
           description:
             "Staying socially engaged and emotionally supported can be crucial for well-being:",
           tasks: [
@@ -74,7 +74,7 @@ export default function ServicesTabs() {
           label: "Specialist",
           icon: <FaUserFriends />,
           title: "Specialist Care",
-          image: "/services-specialist.webp",
+          
           description:
             "For those with more complex health needs, we offer specialized support:",
           tasks: [
@@ -89,7 +89,7 @@ export default function ServicesTabs() {
           label: "Carer Support",
           icon: <FaUserShield />,
           title: "Carer Support",
-          image: "/services-carer-support.webp",
+          
           description:
             "Short-term respite and extra help so primary carers can take a break or receive assistance:",
           tasks: [
@@ -104,7 +104,7 @@ export default function ServicesTabs() {
           label: "Advocacy",
           icon: <FaAssistiveListeningSystems />,
           title: "Advocacy & Guidance",
-          image: "/services-advocacy.webp",
+          
           description:
             "Navigating health and social care services can be challenging. We provide guidance:",
           tasks: [
@@ -125,7 +125,7 @@ export default function ServicesTabs() {
           label: "Paying for Care",
           icon: <FaMoneyBillWave />,
           title: "Paying for Care (Private Client)",
-          image: "/services-personal.webp", // or any placeholder image
+           // or any placeholder image
           description: `
             If you or a family member receives care and support through your local Council, 
             you may be entitled to a 'direct payment' to spend on your care. 

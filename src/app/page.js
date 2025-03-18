@@ -122,8 +122,8 @@ export default function Home() {
               style={{ textShadow: "1px 1px 3px rgba(0,0,0,0.8)" }}
             >
               Every hour, Living Glory Social Care delivers compassionate,
-              professional care to those who need it most. Through millions
-              of moments of care each year, we transform thousands of lives
+              professional care to those who need it most. Through thousands
+              of moments of care each year, we transform hundreds of lives
               every day in their own homes and communities across the UK.
             </motion.p>
 

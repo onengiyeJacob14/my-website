@@ -71,37 +71,7 @@ export default function ServicesPage() {
         {/* NEW Showcase Section */}
         <section className="py-12 px-4 md:px-8 lg:px-16 bg-white">
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            {/* Left: Image Collage */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="relative w-full h-full grid grid-cols-2 grid-rows-2 gap-3"
-            >
-              {/* Replace these image paths with actual files in /public */}
-              <div className="relative w-full h-32 md:h-48 bg-gray-200 rounded overflow-hidden">
-                <img
-                  src="/service-collage-1.webp"
-                  alt="Service 1"
-                  className="object-cover w-full h-full"
-                />
-              </div>
-              <div className="relative w-full h-32 md:h-48 bg-gray-200 rounded overflow-hidden">
-                <img
-                  src="/service-collage-2.webp"
-                  alt="Service 2"
-                  className="object-cover w-full h-full"
-                />
-              </div>
-              <div className="relative w-full h-32 md:h-48 bg-gray-200 rounded overflow-hidden">
-                <img
-                  src="/service-collage-3.webp"
-                  alt="Service 3"
-                  className="object-cover w-full h-full"
-                />
-              </div>
-            </motion.div>
+            
 
             {/* Right: Text & Branding */}
             <motion.div
