@@ -26,10 +26,6 @@ export default function Home() {
       text: "Congrats to everyone for completing training! E-MAR implementation is fully live.",
     },
     {
-      title: "New Website Coming Soon",
-      text: "We\'re launching a new website by March 2025. Stay tuned for more updates!",
-    },
-    {
       title: "Away Days",
       text: "We\'re introducing Away Days to help staff unwind, connect, and recharge outside work.",
     },
@@ -84,7 +80,8 @@ export default function Home() {
               Compassion in Action{" "}
               <span className="relative inline-block">
                 Excellence
-                <span className="absolute left-0 bottom-[0.15em] w-full h-[0.5em]">
+                 {/* SVG stroke placed *below* the text */}
+                 <span className="absolute left-0 top-[calc(100%)] w-full h-[0.5em]">
                   <svg
                     viewBox="0 0 300 20"
                     fill="none"

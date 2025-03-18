@@ -73,6 +73,40 @@ export default function ContactDetailsSection() {
             at our main office.
           </p>
 
+          {/* Email */}
+          <div className="flex items-start space-x-3">
+            <FaEnvelope className="text-[#6818A5] mt-1" size={24} />
+            <div>
+              <h4 className="font-semibold text-lg">Email Us</h4>
+              <p className="text-sm">
+                <a
+                  href="mailto:info@livingglorysocialcare.com"
+                  className="underline text-[#6818A5] hover:text-[#8B2FC9]"
+                >
+                  info@livingglorysocialcare.com
+                </a>
+              </p>
+            </div>
+          </div>
+
+          {/* Phone */}
+          <div className="flex items-start space-x-3">
+            <FaPhone className="text-[#6818A5] mt-1" size={24} />
+            <div>
+              <h4 className="font-semibold text-lg">Phone</h4>
+              <p className="text-sm">0121 679 6452</p>
+            </div>
+          </div>
+
+          {/* Phone */}
+          <div className="flex items-start space-x-3">
+            <FaPhone className="text-[#6818A5] mt-1" size={24} />
+            <div>
+              <h4 className="font-semibold text-lg">Emergency Contacts</h4>
+              <p className="text-sm">07481427966,</p> <p className="text-sm">07749786800,</p> <p className="text-sm">07377928026,</p> <p className="text-sm">07823782121</p>
+            </div>
+          </div>
+
           {/* Address */}
           <div className="flex items-start space-x-3">
             <FaMapMarkerAlt className="text-[#6818A5] mt-1" size={24} />
@@ -96,32 +130,7 @@ export default function ContactDetailsSection() {
             <FaClock className="text-[#6818A5] mt-1" size={24} />
             <div>
               <h4 className="font-semibold text-lg">Opening Hours</h4>
-              <p className="text-sm">Monday - Friday : 9:00am - 17:00</p>
-            </div>
-          </div>
-
-          {/* Phone */}
-          <div className="flex items-start space-x-3">
-            <FaPhone className="text-[#6818A5] mt-1" size={24} />
-            <div>
-              <h4 className="font-semibold text-lg">Phone</h4>
-              <p className="text-sm">0121 679 6452</p>
-            </div>
-          </div>
-
-          {/* Email */}
-          <div className="flex items-start space-x-3">
-            <FaEnvelope className="text-[#6818A5] mt-1" size={24} />
-            <div>
-              <h4 className="font-semibold text-lg">Email Us</h4>
-              <p className="text-sm">
-                <a
-                  href="mailto:info@livingglorysocialcare.com"
-                  className="underline text-[#6818A5] hover:text-[#8B2FC9]"
-                >
-                  info@livingglorysocialcare.com
-                </a>
-              </p>
+              <p className="text-sm">Monday - Friday : 9:00AM - 5:30PM</p>
             </div>
           </div>
 

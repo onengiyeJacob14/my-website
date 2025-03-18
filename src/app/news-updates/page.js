@@ -198,12 +198,11 @@ export default function NewsUpdatesPage() {
                   className="bg-white p-4 shadow rounded-md"
                 >
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                    New Website Coming Soon!
+                    New Website Launched!
                   </h3>
                   <p>
                     We are excited to announce that Living Glory Social Care has
-                    a new website! Full details and the official launch will be
-                    shared by March 2025. Please stay tuned.
+                    a new website!
                   </p>
                 </motion.div>
 

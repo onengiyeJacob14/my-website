@@ -42,7 +42,7 @@ export default function TeamPage() {
     {
       name: "Doyin Ogunmeru",
       role: "Care Coordinator | Payroll Manager",
-      photo: "/documents/team/doyin.png",
+      photo: "/documents/team/Doyin.png",
       
     },
     {
@@ -54,7 +54,7 @@ export default function TeamPage() {
     {
       name: "Samuel Ekun",
       role: "Staffing Coordinator | Invoicing Officer",
-      photo: "/documents/team/samuel.jpg", // Provide the correct image path or leave blank if unavailable
+      photo: "/documents/team/sam.jpg", // Provide the correct image path or leave blank if unavailable
       
     },
     // Add more team members as needed
