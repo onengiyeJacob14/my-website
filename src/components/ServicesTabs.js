@@ -9,7 +9,6 @@ import {
   FaUserFriends,
   FaUserShield,
   FaAssistiveListeningSystems,
-  // You can pick a relevant icon for "Paying for Care"
   FaMoneyBillWave,
 } from "react-icons/fa";
 import Link from "next/link";
@@ -24,7 +23,6 @@ export default function ServicesTabs() {
           label: "Personal",
           icon: <FaUserNurse />,
           title: "Personal Care",
-          
           description:
             "Our care experts can support you with a range of daily tasks in your home which might include:",
           tasks: [
@@ -39,7 +37,6 @@ export default function ServicesTabs() {
           label: "Practical",
           icon: <FaHandsHelping />,
           title: "Practical Support",
-          
           description:
             "We help you with day-to-day tasks that ensure a comfortable, safe home environment:",
           tasks: [
@@ -54,7 +51,6 @@ export default function ServicesTabs() {
           label: "Companionship",
           icon: <FaHeart />,
           title: "Companionship Care",
-          
           description:
             "Staying socially engaged and emotionally supported can be crucial for well-being:",
           tasks: [
@@ -74,7 +70,6 @@ export default function ServicesTabs() {
           label: "Specialist",
           icon: <FaUserFriends />,
           title: "Specialist Care",
-          
           description:
             "For those with more complex health needs, we offer specialized support:",
           tasks: [
@@ -89,7 +84,6 @@ export default function ServicesTabs() {
           label: "Carer Support",
           icon: <FaUserShield />,
           title: "Carer Support",
-          
           description:
             "Short-term respite and extra help so primary carers can take a break or receive assistance:",
           tasks: [
@@ -104,7 +98,6 @@ export default function ServicesTabs() {
           label: "Advocacy",
           icon: <FaAssistiveListeningSystems />,
           title: "Advocacy & Guidance",
-          
           description:
             "Navigating health and social care services can be challenging. We provide guidance:",
           tasks: [
@@ -119,13 +112,11 @@ export default function ServicesTabs() {
     },
     {
       label: "Private Client",
-      // Single sub-tab containing partial text + "See More" link
       subTabs: [
         {
           label: "Paying for Care",
           icon: <FaMoneyBillWave />,
           title: "Paying for Care (Private Client)",
-           // or any placeholder image
           description: `
             If you or a family member receives care and support through your local Council, 
             you may be entitled to a 'direct payment' to spend on your care. 
@@ -137,27 +128,20 @@ export default function ServicesTabs() {
             "You may need to pay some of your costs yourself",
             "Get in touch with your local authority’s Adult Social Care department to learn more",
           ],
-          // We'll place a "See More" link in the UI
         },
       ],
     },
   ];
 
-  // State: which main tab is active, which sub-tab is active
   const [activeMainTab, setActiveMainTab] = useState(0);
   const [activeSubTab, setActiveSubTab] = useState(0);
 
-  // Current subTabs for the active main tab
   const currentSubTabs = mainTabs[activeMainTab].subTabs || [];
   const hasSubTabs = currentSubTabs.length > 0;
-
-  // Current sub-tab data
-  const currentSubTabData = hasSubTabs
-    ? currentSubTabs[activeSubTab]
-    : null;
+  const currentSubTabData = hasSubTabs ? currentSubTabs[activeSubTab] : null;
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col text-center">
       <main className="flex-grow">
         {/* Wavey Lines at the Top */}
         <motion.section
@@ -182,17 +166,8 @@ export default function ServicesTabs() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          {/* Hero image */}
-          <div className="relative w-full h-60 md:h-80 overflow-hidden">
-            <img
-              src="/services-hero.jpg"
-              alt="Hero"
-              className="object-cover w-full h-full"
-            />
-          </div>
-
           {/* Main Tabs Container */}
-          <div className="max-w-6xl mx-auto px-4 md:px-8 lg:px-16">
+          <div className="mx-auto px-4 md:px-8 lg:px-16">
             <div
               className="relative bg-white p-2 rounded-md shadow-md -mt-8 md:-mt-10 lg:-mt-12 flex justify-center"
               style={{ minHeight: "4rem" }}
@@ -226,7 +201,7 @@ export default function ServicesTabs() {
         {/* Sub-tabs (only if subTabs exist) */}
         {hasSubTabs && (
           <section className="pt-6 px-4 md:px-8 lg:px-16 bg-white">
-            <div className="max-w-6xl mx-auto">
+            <div className="mx-auto">
               {/* Sub Tab Buttons */}
               <div className="flex flex-wrap gap-4 items-center justify-center mb-6">
                 {currentSubTabs.map((subTab, subIndex) => (
@@ -253,53 +228,47 @@ export default function ServicesTabs() {
         )}
 
         {/* Active Tab Content */}
-        <section className="py-12 px-4 md:px-8 lg:px-16 bg-white">
-          <div className="max-w-6xl mx-auto">
+        <section className="py-12 px-4 md:px-8 lg:px-16 bg-white text-center">
+          <div className="mx-auto">
             {hasSubTabs ? (
               <motion.div
                 key={activeSubTab}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start"
+                className="flex flex-col items-center"
               >
-                {/* Left: Text */}
-                <div>
-                  <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800">
-                    {currentSubTabData.title}
-                  </h2>
-                  <p className="text-gray-700 mb-4">
-                    {currentSubTabData.description}
-                  </p>
-                  <ul className="list-disc list-inside text-gray-700 space-y-2 mb-4">
-                    {currentSubTabData.tasks.map((task, idx) => (
-                      <li key={idx}>{task}</li>
-                    ))}
-                  </ul>
-                  {/* "See More" link for Private Client sub-tab */}
-                  {activeMainTab === 2 && activeSubTab === 0 && (
-                    <div className="mt-4">
-                      <Link
-                        href="/paying-for-care"
-                        className="text-purple-700 underline"
-                      >
-                        See more about Paying for Care
-                      </Link>
-                    </div>
-                  )}
-                </div>
+                {/* Title */}
+                <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800">
+                  {currentSubTabData.title}
+                </h2>
 
-                {/* Right: Image pinned to top-right */}
-                <div className="relative w-full h-64 md:h-96 bg-gray-200 rounded overflow-hidden">
-                  <img
-                    src={currentSubTabData.image}
-                    alt={currentSubTabData.title}
-                    className="object-contain w-full h-full"
-                  />
-                </div>
+                {/* Description */}
+                <p className="text-gray-700 mb-4 max-w-3xl mx-auto">
+                  {currentSubTabData.description}
+                </p>
+
+                {/* Task List */}
+                <ul className="list-disc list-inside text-gray-700 space-y-2 mb-4 max-w-md mx-auto">
+                  {currentSubTabData.tasks.map((task, idx) => (
+                    <li key={idx}>{task}</li>
+                  ))}
+                </ul>
+
+                {/* "See More" link for Private Client sub-tab */}
+                {activeMainTab === 2 && activeSubTab === 0 && (
+                  <div className="mt-4">
+                    <Link
+                      href="/paying-for-care"
+                      className="text-purple-700 underline"
+                    >
+                      See more about Paying for Care
+                    </Link>
+                  </div>
+                )}
               </motion.div>
             ) : (
-              <div className="text-center py-16">
+              <div className="py-16">
                 <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800">
                   Coming Soon
                 </h2>

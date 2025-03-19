@@ -43,7 +43,8 @@ export default function ServicesPage() {
       <main className="flex-grow">
         {/* Hero Section with Metallic Gradient */}
         <section className="relative w-full bg-gradient-to-r from-[#6818A5] to-[#8B2FC9] py-16 px-4 md:px-8 lg:px-16 text-white overflow-hidden">
-          <div className="max-w-6xl mx-auto relative z-10">
+          {/* Removed max-w-6xl to allow full width, but kept mx-auto for clean layout if needed */}
+          <div className="mx-auto relative z-10">
             <motion.h1
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -64,14 +65,13 @@ export default function ServicesPage() {
               compassionate, high-quality care tailored to their unique needs.
             </motion.p>
           </div>
-          {/* Optional: If you want a background image or overlay, you can add it here */}
-          {/* <div className="absolute inset-0 bg-[url('/services-hero.jpg')] bg-cover bg-center opacity-20" /> */}
         </section>
 
         {/* NEW Showcase Section */}
         <section className="py-12 px-4 md:px-8 lg:px-16 bg-white">
-          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            
+          {/* Removed max-w-6xl; content now extends more fully to the right */}
+          <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            {/* (If you have an image collage or something else on the left, you can put it here) */}
 
             {/* Right: Text & Branding */}
             <motion.div
