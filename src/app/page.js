@@ -62,7 +62,7 @@ export default function Home() {
       <Header />
       <main className="flex-grow relative">
         {/* Hero Section */}
-        <section className="relative h-[75vh] md:h-screen flex items-center overflow-hidden">
+        <section className="relative h-[65vh] md:h-screen flex items-center overflow-hidden">
           <div
             className="absolute inset-0"
             style={{
@@ -73,13 +73,13 @@ export default function Home() {
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/40" />
-          <div className="relative z-10 p- 4 md:pl-6 md:pr-4 text-left text-white max-w-md md:max-w-xl">
+          <div className="relative z-10 px-4 py-8 md:pl-6 md:pr-4 md:py-0 text-left text-white max-w-sm sm:max-w-md md:max-w-xl">
             {/* Main Heading */}
             <motion.h1
-              initial={{ y: -50, opacity: 0 }}
+              initial={{ y: -30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="text-3xl md:text-4xl font-bold mb-4 leading-tight text-white"
+              className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 leading-tight text-white"
               style={{ textShadow: "1px 1px 3px rgba(0,0,0,0.8)" }}
             >
               Compassion in Action{" "}
@@ -120,10 +120,10 @@ export default function Home() {
 
             {/* Subheading */}
             <motion.p
-              initial={{ y: 50, opacity: 0 }}
+              initial={{ y: 30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 1, duration: 0.8 }}
-              className="text-base md:text-lg mb-8 leading-normal"
+              className="text-sm sm:text-base md:text-lg mb-8 leading-normal"
               style={{ textShadow: "1px 1px 3px rgba(0,0,0,0.8)" }}
             >
               Every hour, Living Glory Social Care delivers compassionate,
@@ -136,12 +136,12 @@ export default function Home() {
 
             {/* CTA Button */}
             <motion.div
-              initial={{ scale: 0.8, opacity: 0 }}
+              initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
-              transition={{ delay: 1.5, duration: 0.8 }}
+              transition={{ delay: 1.5, duration: 0.6 }}
             >
               <Link href="/contact">
-                <button className="bg-purple-600 text-white py-2 px-6 rounded hover:bg-purple-700 transition">
+                <button className="bg-purple-600 text-white py-2 px-6 rounded hover:bg-purple-700 transition w-full sm:w-auto">
                   Get in Touch
                 </button>
               </Link>
@@ -151,15 +151,15 @@ export default function Home() {
 
         {/* NEW SECTION: Newsletter / News */}
         <Link href="/news-updates" className="block">
-          <section className="relative bg-[#ffe6f2] py-12 px-4 md:px-8 lg:px-16 text-gray-800">
-            <div className="max-w-6xl mx-auto rounded-md shadow-lg p-6 md:p-10 hover:shadow-2xl transition bg-white/90 backdrop-blur-sm">
+          <section className="relative bg-[#ffe6f2] py-10 md:py-12 px-4 md:px-8 lg:px-16 text-gray-800">
+            <div className="max-w-6xl mx-auto rounded-md shadow-lg p-4 md:p-10 hover:shadow-2xl transition bg-white/90 backdrop-blur-sm">
               {/* Title */}
               <motion.h2
                 initial={{ opacity: 0, y: -20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="text-3xl md:text-4xl font-bold text-[#6818A5] mb-2 text-center"
+                className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#6818A5] mb-2 text-center"
               >
                 <span className="inline-flex items-center justify-center gap-2">
                   <FaRegNewspaper className="text-[#6818A5]" />
@@ -168,26 +168,26 @@ export default function Home() {
                   </span>
                 </span>
               </motion.h2>
-              <p className="text-center mb-2 text-sm uppercase tracking-wide text-gray-600">
+              <p className="text-center mb-2 text-xs sm:text-sm uppercase tracking-wide text-gray-600">
                 Winter 2025
               </p>
-              <p className="text-center mb-8 italic">
+              <p className="text-center mb-8 italic text-sm sm:text-base">
                 Supporting Independence, Enriching Lives ❄️
               </p>
 
               {/* Directors Greeting */}
               <div className="mb-8">
-                <h3 className="text-2xl font-semibold mb-4">
+                <h3 className="text-xl sm:text-2xl font-semibold mb-4">
                   From the Directors&apos; Desk
                 </h3>
-                <p className="mb-3">
+                <p className="mb-3 text-sm sm:text-base">
                   Dear Team, as we journey through the winter months, we want to
                   pause and recognise your continued dedication, resilience and
                   compassion. The colder, darker days can be challenging for
                   both staff and clients, yet you consistently go above and
                   beyond to deliver safe, person-centred care.
                 </p>
-                <p>
+                <p className="text-sm sm:text-base">
                   Thank you for the warmth, professionalism and kindness you
                   bring to every visit, every call and every interaction. You
                   are the heart of Living Glory Social Care, and we are truly
@@ -207,7 +207,9 @@ export default function Home() {
                     height={150}
                     className="rounded-full object-cover mb-2"
                   />
-                  <p className="font-semibold">Dr Mary Alile-Idele</p>
+                  <p className="font-semibold text-sm sm:text-base">
+                    Dr Mary Alile-Idele
+                  </p>
                 </div>
                 {/* Pius */}
                 <div className="flex flex-col items-center">
@@ -218,7 +220,9 @@ export default function Home() {
                     height={150}
                     className="rounded-full object-cover mb-2"
                   />
-                  <p className="font-semibold">Mr Pius Alile</p>
+                  <p className="font-semibold text-sm sm:text-base">
+                    Mr Pius Alile
+                  </p>
                 </div>
                 {/* Olivia */}
                 <div className="flex flex-col items-center">
@@ -229,16 +233,18 @@ export default function Home() {
                     height={150}
                     className="rounded-full object-cover mb-2"
                   />
-                  <p className="font-semibold">Olivia Lonngren</p>
+                  <p className="font-semibold text-sm sm:text-base">
+                    Olivia Lonngren
+                  </p>
                 </div>
               </div>
 
               {/* Fun Fact (Animated & Playful) */}
               <motion.div
-                initial={{ scale: 0.8, opacity: 0 }}
+                initial={{ scale: 0.9, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 0.2, type: "spring" }}
+                transition={{ duration: 0.6, delay: 0.2, type: "spring" }}
                 className="bg-[#fff3c2] p-4 rounded-md border border-yellow-300 mb-6 text-center"
               >
                 <h4 className="text-lg md:text-xl font-bold text-[#d67f0b] mb-2">
@@ -247,7 +253,7 @@ export default function Home() {
                     <span>Winter Fun Fact</span>
                   </span>
                 </h4>
-                <p className="text-[#b36b00]">
+                <p className="text-[#b36b00] text-sm sm:text-base">
                   On cold days, a shared laugh is like a warm blanket – it
                   doesn&apos;t change the weather, but it makes everything feel a
                   little brighter. Take a moment today to share a smile with a
@@ -256,7 +262,7 @@ export default function Home() {
               </motion.div>
 
               {/* Closing Note */}
-              <p>
+              <p className="text-sm sm:text-base">
                 With exciting updates ahead, including training improvements,
                 E-MAR implementation, and enhanced compliance measures, we
                 remain committed to providing the highest standards of care. We
@@ -270,7 +276,7 @@ export default function Home() {
         {/* CAROUSEL of Latest News */}
         <section className="py-8 px-4 md:px-8 lg:px-16 bg-white">
           <div className="max-w-6xl mx-auto">
-            <p className="text-sm uppercase tracking-wide text-gray-500 mb-1">
+            <p className="text-xs sm:text-sm uppercase tracking-wide text-gray-500 mb-1">
               Winter 2025
             </p>
             <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
@@ -279,11 +285,11 @@ export default function Home() {
                 <span>Latest Winter Updates ❄️</span>
               </span>
             </h3>
-            <div className="flex items-center space-x-4">
+            <div className="flex flex-col md:flex-row md:items-center md:space-x-4 space-y-4 md:space-y-0">
               {/* Prev Button */}
               <button
                 onClick={handlePrev}
-                className="bg-purple-600 text-white py-1 px-3 rounded hover:bg-purple-700 transition flex items-center gap-1"
+                className="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition flex items-center justify-center gap-1 w-full md:w-auto"
               >
                 <FaChevronLeft />
                 <span>Prev</span>
@@ -291,26 +297,26 @@ export default function Home() {
               {/* Carousel Content */}
               <motion.div
                 key={carouselIndex}
-                initial={{ opacity: 0, x: 50 }}
+                initial={{ opacity: 0, x: 30 }}
                 animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -50 }}
+                exit={{ opacity: 0, x: -30 }}
                 transition={{ duration: 0.5 }}
                 className="flex-grow text-center bg-gray-100 rounded p-6 shadow"
               >
                 <p className="text-xs uppercase tracking-wide text-gray-500 mb-1">
                   Winter Highlight
                 </p>
-                <h4 className="text-xl font-semibold mb-2 text-gray-800">
+                <h4 className="text-lg sm:text-xl font-semibold mb-2 text-gray-800">
                   {carouselData[carouselIndex].title}
                 </h4>
-                <p className="text-gray-700">
+                <p className="text-gray-700 text-sm sm:text-base">
                   {carouselData[carouselIndex].text}
                 </p>
               </motion.div>
               {/* Next Button */}
               <button
                 onClick={handleNext}
-                className="bg-purple-600 text-white py-1 px-3 rounded hover:bg-purple-700 transition flex items-center gap-1"
+                className="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition flex items-center justify-center gap-1 w-full md:w-auto"
               >
                 <span>Next</span>
                 <FaChevronRight />
