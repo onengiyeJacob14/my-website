@@ -23,7 +23,7 @@ export default function NewsUpdatesPage() {
     <div className="min-h-screen flex flex-col bg-white">
       <Header />
       <main className="flex-grow">
-        {/* SECTION 1: Company Updates (Playful) */}
+        {/* SECTION 1: News in Brief */}
         <section className="py-12 px-4 md:px-8 lg:px-16 bg-[#fff8eb]">
           <div className="max-w-6xl mx-auto">
             <motion.h2
@@ -33,7 +33,7 @@ export default function NewsUpdatesPage() {
               transition={{ duration: 0.8 }}
               className="text-2xl md:text-3xl font-bold text-[#6818A5] mb-6"
             >
-              Company Updates
+              News in Brief
             </motion.h2>
 
             {/* Content Box */}
@@ -47,55 +47,56 @@ export default function NewsUpdatesPage() {
               <div className="flex items-center space-x-2">
                 <FaMoneyBillWave className="text-pink-500" />
                 <p className="font-semibold">
-                  <strong>NMW Increase &amp; Annual Leave Requests:</strong>
+                  <strong>New Company Jumpers:</strong>
                 </p>
               </div>
               <p className="ml-7">
-                Employees should be aware of the upcoming NMW increase. From
-                1st April 2025, there will also be changes to the annual leave
-                processing system. Please stay updated via the WhatsApp groups
-                for details.
+                Great news! The new company jumpers are now ready for
+                collection. Please visit the office and see Jennifer for
+                details.
               </p>
 
               <div className="flex items-center space-x-2">
                 <FaClipboardCheck className="text-pink-500" />
                 <p className="font-semibold">
-                  <strong>Spot Checks:</strong>
+                  <strong>Referral Incentive:</strong>
                 </p>
               </div>
               <p className="ml-7">
-                Office staff will be conducting spot checks over the coming
-                weeks to maintain quality standards. We appreciate your
-                cooperation.
+                Don&apos;t forget—our referral incentive is still ongoing! Refer a
+                new client and receive a £50 reward as a token of appreciation.
               </p>
 
               <div className="flex items-center space-x-2">
                 <FaUserClock className="text-pink-500" />
                 <p className="font-semibold">
-                  <strong>Supervisions — March 2025:</strong>
+                  <strong>Winter Supervision:</strong>
                 </p>
               </div>
               <p className="ml-7">
-                Staff supervisions are scheduled for March 2025. Dates will be
-                shared soon.
+                Staff winter supervision sessions will take place on the 19th,
+                20th, and 21st of November 2025. Please make yourselves
+                available.
               </p>
 
               <div className="flex items-center space-x-2">
                 <FaHeartbeat className="text-pink-500" />
                 <p className="font-semibold">
-                  <strong>Client Feedback:</strong>
+                  <strong>Staff Support &amp; Escalation:</strong>
                 </p>
               </div>
               <p className="ml-7">
-                The latest feedback review (Feb – Jul 2025) was generally
-                positive, reflecting well on the quality of care provided. Thank
-                you for your dedication!
+                For general queries, please use the office line or email. If you
+                have any concerns that need to be discussed with the Registered
+                Manager or Senior Management, please escalate directly to the
+                office or through the WhatsApp group. For quality-related
+                issues, contact the Quality Improvement Manager.
               </p>
             </motion.div>
           </div>
         </section>
 
-        {/* SECTION 2: Training & Health & Safety */}
+        {/* SECTION 2: Christmas Raffle & Hygiene */}
         <section className="py-12 px-4 md:px-8 lg:px-16 bg-[#f0faff]">
           <div className="max-w-6xl mx-auto">
             <motion.h2
@@ -105,11 +106,11 @@ export default function NewsUpdatesPage() {
               transition={{ duration: 0.8 }}
               className="text-2xl md:text-3xl font-bold text-[#6818A5] mb-6"
             >
-              Training &amp; Health &amp; Safety Updates
+              Christmas Raffle &amp; Winter Reminders
             </motion.h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-base md:text-lg text-gray-800 leading-relaxed">
-              {/* Left Column: Training Completion */}
+              {/* Left Column: Christmas Hamper Raffle */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -119,27 +120,40 @@ export default function NewsUpdatesPage() {
               >
                 <h3 className="text-xl font-semibold mb-2 flex items-center space-x-2 text-gray-800">
                   <FaTools className="text-blue-500" />
-                  <span>Training Completion</span>
+                  <span>Win A Christmas Hamper!</span>
                 </h3>
                 <p className="mb-2">
-                  Well done to all staff for successfully completing their
-                  training! This will be an annual requirement to maintain
-                  compliance and service quality.
+                  Includes: 2 bottles of wine, £20 Amazon gift card,
+                  smartwatch, sweet treats, chocolates, candles, mugs, kitchen
+                  utensils and a cosy blanket!
                 </p>
                 <p className="mb-2">
-                  <strong>Training Compensation:</strong> The £50 training
-                  compensation will be reflected in your March 2025 or April
-                  2025 payslip if not yet received.
+                  <strong>Raffle tickets:</strong> £1 each — all proceeds go to
+                  Make-A-Wish, helping grant wishes for children with
+                  life-threatening illnesses.
+                </p>
+                <p className="mb-2">
+                  <strong>Prizes:</strong>
+                  <br />
+                  1st Prize: Xmas Hamper worth £100
+                  <br />
+                  2nd Prize: £50
+                  <br />
+                  3rd Prize: £25
+                </p>
+                <p className="mb-2">
+                  See Jessica to buy your tickets (no limit!).
                 </p>
                 <p>
-                  <strong>E-MAR Implementation:</strong> The electronic
-                  medication and administration record system has been fully
-                  implemented. Please ensure all protocols are followed for
-                  proper usage.
+                  <strong>Start Date:</strong> Monday 1st December 2025
+                  <br />
+                  <strong>Deadline:</strong> Friday 19th December 2025
+                  <br />
+                  Merry Christmas!
                 </p>
               </motion.div>
 
-              {/* Right Column: Health & Safety */}
+              {/* Right Column: Carers' Hygiene Reminder */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -149,31 +163,27 @@ export default function NewsUpdatesPage() {
               >
                 <h3 className="text-xl font-semibold mb-2 flex items-center space-x-2 text-gray-800">
                   <FaUserShield className="text-blue-500" />
-                  <span>Health &amp; Safety: PPE Use &amp; Uniform Guidelines</span>
+                  <span>Carers&apos; Hygiene Reminder</span>
                 </h3>
                 <p className="mb-2">
-                  <strong>PPE Usage:</strong> Wear appropriate PPE—gloves,
-                  aprons, masks—for tasks that require them.
+                  A clean uniform, fresh breath, and a pleasant scent make a big
+                  difference. Staying fresh and well-presented helps you feel
+                  confident and ensures those you support feel comfortable.
                 </p>
                 <p className="mb-2">
-                  <strong>Uniform Standards:</strong> Keep uniforms clean and
-                  professional; no open-toe shoes or dangling jewelry.
-                </p>
-                <p className="mb-2">
-                  <strong>General Safety:</strong> By following guidelines, we
-                  maintain a safe and professional environment.
+                  Let&apos;s always show our dedication through good hygiene and
+                  professionalism!
                 </p>
                 <div className="bg-[#e8f7ff] border-l-4 border-blue-300 p-3 mt-4 rounded">
-                  <strong>PPE Delivery Reminder:</strong> PPE is delivered every
-                  Friday. If you need to be on the drop-off list, contact
-                  Osaretin.
+                  Thank you for continuing to represent Living Glory Social Care
+                  with pride and professionalism in everything you do.
                 </div>
               </motion.div>
             </div>
           </div>
         </section>
 
-        {/* SECTION 3: New Website, Wellbeing, Employee Recognition */}
+        {/* SECTION 3: Fun Fact, Quiz & Recognition */}
         <section className="py-12 px-4 md:px-8 lg:px-16 bg-[#fff9fa]">
           <div className="max-w-6xl mx-auto">
             <motion.h2
@@ -183,13 +193,13 @@ export default function NewsUpdatesPage() {
               transition={{ duration: 0.8 }}
               className="text-2xl md:text-3xl font-bold text-[#6818A5] mb-6"
             >
-              Latest Announcements
+              Fun Fact, Quiz &amp; Recognition
             </motion.h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 text-base md:text-lg text-gray-800 leading-relaxed">
               {/* Left Column */}
               <div className="space-y-6">
-                {/* New Website Coming Soon */}
+                {/* Fun Fact */}
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -198,15 +208,15 @@ export default function NewsUpdatesPage() {
                   className="bg-white p-4 shadow rounded-md"
                 >
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                    New Website Launched!
+                    Fun Fact
                   </h3>
                   <p>
-                    We are excited to announce that Living Glory Social Care has
-                    a new website!
+                    Laughter is contagious... Share a giggle and watch stress
+                    melt away.
                   </p>
                 </motion.div>
 
-                {/* Health & Wellbeing Corner */}
+                {/* Quiz */}
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -215,26 +225,25 @@ export default function NewsUpdatesPage() {
                   className="bg-white p-4 shadow rounded-md"
                 >
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                    Health &amp; Wellbeing Corner
+                    Quiz
                   </h3>
-                  <ul className="list-disc list-inside space-y-2">
-                    <li>
-                      <strong>Stay Active:</strong> As the weather improves,
-                      consider short walks or breaks to boost energy.
-                    </li>
-                    <li>
-                      <strong>Hydration Reminder:</strong> Warmer weather means
-                      staying hydrated is crucial!
-                    </li>
-                    <li>
-                      <strong>Mental Health Support:</strong> Reach out to
-                      management or use our EAP (Wisdom App) if you need help.
-                    </li>
-                  </ul>
+                  <p className="mb-2">
+                    Why is whistleblowing important in a care environment, and
+                    how does it benefit both Carers and those they care for or
+                    support?
+                  </p>
+                  <p className="mb-2">
+                    Please answer in not more than 100 words and send your
+                    response to{" "}
+                    <strong>osaretin.alile@livingglorysocialcare.com</strong>{" "}
+                    on or before <strong>30th November 2025</strong> for a
+                    prize.
+                  </p>
+                  <p>Good luck, and thank you for taking part!</p>
                 </motion.div>
               </div>
 
-              {/* Right Column: Employee Recognition */}
+              {/* Right Column: Recognition */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -243,61 +252,67 @@ export default function NewsUpdatesPage() {
                 className="bg-white p-4 shadow rounded-md"
               >
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                  Employee Recognition
+                  Recognition – Carers of the Quarter
                 </h3>
                 <p className="mb-4">
-                  We want to recognise the following staff members for their
-                  outstanding contributions this quarter. Your efforts do not go
-                  unnoticed!
+                  Congratulations to our{" "}
+                  <strong>Carers of the Quarter</strong>! Your hard work,
+                  compassion, and dedication have truly set you apart. You are
+                  shining examples of excellent care and teamwork, inspiring
+                  others through your commitment and positive attitude. Well
+                  done — you&apos;ve made us all proud!
                 </p>
                 {/* Staff Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  {/* Ortis */}
+                  {/* Farida */}
                   <div className="flex flex-col items-center">
                     <Image
                       src="/documents/team/ortis.png"
-                      alt="Ortiz"
+                      alt="Farida Parvin-Choudbury"
                       width={100}
                       height={100}
                       className="rounded-full object-cover mb-2"
                     />
                     <p className="font-semibold text-gray-800">
-                      EJIROGHENE MUDIAGA-ORTIS
+                      FARIDA PARVIN-CHOUDBURY
                     </p>
                     <p className="text-sm text-center">
-                      Above &amp; beyond in ensuring person-centered&nbsp;care.
+                      For consistently delivering compassionate, person-centred
+                      care.
                     </p>
                   </div>
-                  {/* Nora */}
+                  {/* Hemalidevi */}
                   <div className="flex flex-col items-center">
                     <Image
                       src="/documents/team/nora.png"
-                      alt="Nora"
+                      alt="Hemalidevi Shah"
                       width={100}
                       height={100}
                       className="rounded-full object-cover mb-2"
                     />
                     <p className="font-semibold text-gray-800">
-                      NORA ANYOBUEKE
+                      HEMALIDEVI SHAH
                     </p>
                     <p className="text-sm text-center">
-                      Consistently providing empathy &amp; compassion.
+                      For her calm, reassuring presence and professional
+                      approach.
                     </p>
                   </div>
-                  {/* Kingsley */}
+                  {/* Simon */}
                   <div className="flex flex-col items-center">
                     <Image
                       src="/documents/team/kingsley.png"
-                      alt="Kingsley"
+                      alt="Simon Osemuwehi"
                       width={100}
                       height={100}
                       className="rounded-full object-cover mb-2"
                     />
                     <p className="font-semibold text-gray-800">
-                      KINGSLEY NWAGBO
+                      SIMON OSEMUWEHI
                     </p>
                     <p className="text-sm text-center">
-                      Exceptional teamwork &amp; high standards.
+                      For going above and beyond to support both clients and
+                      colleagues.
                     </p>
                   </div>
                 </div>
@@ -306,7 +321,7 @@ export default function NewsUpdatesPage() {
           </div>
         </section>
 
-        {/* SECTION 4: Upcoming Event & Engagement */}
+        {/* SECTION 4: Winter Coffee Morning */}
         <section className="py-12 px-4 md:px-8 lg:px-16 bg-[#fff8eb]">
           <div className="max-w-6xl mx-auto text-base md:text-lg text-gray-800 leading-relaxed">
             <motion.h2
@@ -316,22 +331,24 @@ export default function NewsUpdatesPage() {
               transition={{ duration: 0.8 }}
               className="text-2xl md:text-3xl font-bold text-[#6818A5] mb-6"
             >
-              Upcoming Event &amp; Engagement
+              Warm Up For Our Winter Coffee Morning
             </motion.h2>
 
             <div className="border-2 border-gray-300 p-6 rounded-md space-y-4">
-              <h3 className="text-xl font-semibold">Away Days</h3>
+              <h3 className="text-xl font-semibold">Winter Coffee Morning</h3>
               <p>
-                We are introducing <strong>Away Days</strong> as an opportunity
-                for staff to unwind, connect, and recharge outside of the usual
-                work environment. These non-compulsory events are designed to
-                promote well-being, team bonding, and personal development—
-                offering a chance to step away from daily routines and engage in
-                enjoyable activities.
+                After the huge success of our last gathering, we&apos;re back
+                with a cosy <strong>Winter Coffee Morning</strong> on{" "}
+                <strong>November 24th, 2025</strong>.
               </p>
               <p>
-                Further details will be shared this spring, so keep an eye out
-                for updates!
+                Join us for hot drinks, sweet treats, and plenty of seasonal fun
+                with your colleagues. There will be great vibes, music, and even
+                some exciting games and quizzes to keep everyone energised!
+              </p>
+              <p>
+                Further details will be shared soon — we can&apos;t wait to see
+                you there.
               </p>
             </div>
           </div>
@@ -347,7 +364,7 @@ export default function NewsUpdatesPage() {
               transition={{ duration: 0.8 }}
               className="text-2xl md:text-3xl font-bold text-[#6818A5] mb-6"
             >
-              Updated Management Job Roles &amp; Contact Details
+              Management Job Roles &amp; Contact Details
             </motion.h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -361,30 +378,37 @@ export default function NewsUpdatesPage() {
               >
                 <div className="flex items-center mb-4 space-x-2">
                   <FaEnvelope className="text-purple-700 bg-white p-1 rounded" />
-                  <p className="font-semibold text-gray-800">General Enquiries:</p>
+                  <p className="font-semibold text-gray-800">
+                    General Enquiries:
+                  </p>
                 </div>
-                <p className="ml-7 mb-6">info@livingglorysocialcare.com</p>
+                <p className="ml-7 mb-4">
+                  info@livingglorysocialcare.com
+                </p>
+
+                <p className="font-semibold mb-2">Reference Enquiries:</p>
+                <p className="mb-6">referencing@livingglorysocialcare.com</p>
 
                 <p className="font-semibold mb-2">Management Contacts:</p>
                 <ul className="space-y-2">
                   <li>
-                    Jessica Idele (Quality Improvement Manager / Field Care Supervisor)
-                    &mdash; jessica@livingglorysocialcare.com
+                    Jessica Idele (Quality Improvement Manager / Field Care
+                    Supervisor) &mdash; jessica.idele@livingglorysocialcare.com
                   </li>
                   <li>
-                    Pius Alile (Director of Strategy &amp; Operation)
-                    &mdash; pius@livingglorysocialcare.com
-                  </li>
-                  <li>
-                    Doyin Ogunmeru (Senior Care Staff)
+                    Doyin Ogunmeru (Care Co-ordinator / Payroll Manager)
                     &mdash; doyin.ogunmeru@livingglorysocialcare.com
                   </li>
                   <li>
-                    Jennifer Odighibor (Senior Care Staff)
-                    &mdash; jennifer@livingglorysocialcare.com
+                    Osaretin Alile (HR and Training Co-ordinator) &mdash;
+                    osaretin.alile@livingglorysocialcare.com
                   </li>
                   <li>
-                    Samuel Ekun (Staffing Coordinator &amp; Services Officer)
+                    Jennifer Odighbor (Care Monitoring and Invoicing Officer)
+                    &mdash; jennifer.odighbor@livingglorysocialcare.com
+                  </li>
+                  <li>
+                    Samuel Ekun (Staffing Co-Ordinator and Invoicing Officer)
                     &mdash; samuel.ekun@livingglorysocialcare.com
                   </li>
                 </ul>
@@ -402,12 +426,15 @@ export default function NewsUpdatesPage() {
                   Final Notes
                 </h3>
                 <p className="mb-4">
-                  As we embrace the new season, let&apos;s continue working together
-                  to provide the best care for our clients! On behalf of the
-                  team at Living Glory Social Care, we appreciate everything
-                  that you do. If you have any questions or need assistance,
-                  don&apos;t hesitate to reach out. Wishing you all a wonderful and
-                  productive Spring!
+                  Thank you for your continued hard work and commitment during
+                  this winter season. Your dedication ensures that our clients
+                  receive safe, compassionate, and high-quality care all year
+                  round.
+                </p>
+                <p className="mb-4">
+                  Remember, if you have any concerns or quality-related issues,
+                  please contact the office or speak to the Quality Improvement
+                  Manager. We are here to support you.
                 </p>
                 <div className="border-t border-gray-300 pt-4">
                   <p className="font-semibold">
@@ -418,8 +445,8 @@ export default function NewsUpdatesPage() {
                   <address className="not-italic mt-2 text-sm text-gray-700">
                     <strong>Address:</strong> St George&apos;s Hub, Great Hampton
                     Row, Birmingham, B19 3JG <br />
-                    <strong>Telephone:</strong> 0121 679 6452 | <strong>Email:</strong>{" "}
-                    info@livingglorysocialcare.com
+                    <strong>Telephone:</strong> 0121 679 6452 |{" "}
+                    <strong>Email:</strong> info@livingglorysocialcare.com
                   </address>
                 </div>
               </motion.div>
