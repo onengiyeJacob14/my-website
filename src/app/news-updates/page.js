@@ -7,9 +7,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import {
   FaMoneyBillWave,
-  FaCalendarAlt,
-  FaTshirt,
-  FaHandsHelping,
   FaUserClock,
   FaClipboardCheck,
   FaUserShield,
@@ -19,6 +16,10 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
   FaPhoneAlt,
+  FaCalendarAlt,
+  FaTshirt,
+  FaHandsHelping,
+  FaGift,
 } from "react-icons/fa";
 
 export default function NewsUpdatesPage() {
@@ -47,6 +48,7 @@ export default function NewsUpdatesPage() {
               transition={{ duration: 0.8, delay: 0.1 }}
               className="bg-white border-l-4 border-pink-300 shadow p-4 rounded-md space-y-3 text-base md:text-lg text-gray-800 leading-relaxed"
             >
+              {/* New Company Jumpers */}
               <div className="flex items-center space-x-2">
                 <FaTshirt className="text-pink-500" />
                 <p className="font-semibold">
@@ -59,8 +61,9 @@ export default function NewsUpdatesPage() {
                 details.
               </p>
 
+              {/* Referral Incentive */}
               <div className="flex items-center space-x-2">
-                <FaMoneyBillWave className="text-pink-500" />
+                <FaGift className="text-pink-500" />
                 <p className="font-semibold">
                   <strong>Referral Incentive:</strong>
                 </p>
@@ -70,6 +73,7 @@ export default function NewsUpdatesPage() {
                 new client and receive a £50 reward as a token of appreciation.
               </p>
 
+              {/* Winter Supervision */}
               <div className="flex items-center space-x-2">
                 <FaCalendarAlt className="text-pink-500" />
                 <p className="font-semibold">
@@ -82,6 +86,7 @@ export default function NewsUpdatesPage() {
                 available.
               </p>
 
+              {/* Staff Support & Escalation */}
               <div className="flex items-center space-x-2">
                 <FaHandsHelping className="text-pink-500" />
                 <p className="font-semibold">
@@ -186,7 +191,7 @@ export default function NewsUpdatesPage() {
           </div>
         </section>
 
-        {/* SECTION 3: Fun Fact, Quiz & Recognition */}
+        {/* SECTION 3: Fun Fact & Recognition */}
         <section className="py-12 px-4 md:px-8 lg:px-16 bg-[#fff9fa]">
           <div className="max-w-6xl mx-auto">
             <motion.h2
@@ -196,7 +201,7 @@ export default function NewsUpdatesPage() {
               transition={{ duration: 0.8 }}
               className="text-2xl md:text-3xl font-bold text-[#6818A5] mb-6"
             >
-              Fun Fact, Quiz &amp; Recognition
+              Fun Fact &amp; Recognition
             </motion.h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 text-base md:text-lg text-gray-800 leading-relaxed">
@@ -217,32 +222,6 @@ export default function NewsUpdatesPage() {
                     Laughter is contagious... Share a giggle and watch stress
                     melt away.
                   </p>
-                </motion.div>
-
-                {/* Quiz */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8, delay: 0.2 }}
-                  className="bg-white p-4 shadow rounded-md"
-                >
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                    Quiz
-                  </h3>
-                  <p className="mb-2">
-                    Why is whistleblowing important in a care environment, and
-                    how does it benefit both Carers and those they care for or
-                    support?
-                  </p>
-                  <p className="mb-2">
-                    Please answer in not more than 100 words and send your
-                    response to{" "}
-                    <strong>osaretin.alile@livingglorysocialcare.com</strong>{" "}
-                    on or before <strong>30th November 2025</strong> for a
-                    prize.
-                  </p>
-                  <p>Good luck, and thank you for taking part!</p>
                 </motion.div>
               </div>
 
@@ -324,6 +303,57 @@ export default function NewsUpdatesPage() {
           </div>
         </section>
 
+        {/* NEW SECTION: Quiz Time */}
+        <section className="py-12 px-4 md:px-8 lg:px-16 bg-[#f0faff]">
+          <div className="max-w-6xl mx-auto text-base md:text-lg text-gray-800 leading-relaxed">
+            <motion.h2
+              initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="text-2xl md:text-3xl font-bold text-[#6818A5] mb-4"
+            >
+              Quiz Time! 🧠✨
+            </motion.h2>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              className="bg-white border-l-4 border-pink-300 shadow p-6 rounded-md space-y-4"
+            >
+              <p className="inline-block px-3 py-1 text-sm font-semibold rounded-full bg-[#fff8eb] text-[#6818A5] mb-2">
+                Your chance to learn, reflect &amp; win!
+              </p>
+              <h3 className="text-xl font-semibold text-gray-800">
+                Quiz Question
+              </h3>
+              <p className="mb-2">
+                Why is whistleblowing important in a care environment, and how
+                does it benefit both Carers and those they care for or support?
+              </p>
+              <p className="mb-2">
+                Please answer in not more than <strong>100 words</strong> and
+                send your response to{" "}
+                <strong>osaretin.alile@livingglorysocialcare.com</strong> on or
+                before <strong>30th November 2025</strong> for a prize.
+              </p>
+              <p className="mb-1 font-semibold">How to take part:</p>
+              <ul className="list-disc list-inside space-y-1">
+                <li>Think about your answer.</li>
+                <li>Write it in 100 words or less.</li>
+                <li>
+                  Email it to{" "}
+                  <strong>osaretin.alile@livingglorysocialcare.com</strong>.
+                </li>
+              </ul>
+              <p className="mt-2">
+                Good luck, and thank you for taking part! 🎉
+              </p>
+            </motion.div>
+          </div>
+        </section>
+
         {/* SECTION 4: Winter Coffee Morning */}
         <section className="py-12 px-4 md:px-8 lg:px-16 bg-[#fff8eb]">
           <div className="max-w-6xl mx-auto text-base md:text-lg text-gray-800 leading-relaxed">
@@ -357,7 +387,7 @@ export default function NewsUpdatesPage() {
           </div>
         </section>
 
-        {/* SECTION 5: Updated Management Roles, Contact, Final Notes */}
+        {/* SECTION 5: Management Roles, Contact, Final Notes */}
         <section className="py-12 px-4 md:px-8 lg:px-16 bg-white">
           <div className="max-w-6xl mx-auto text-base md:text-lg text-gray-800 leading-relaxed">
             <motion.h2
