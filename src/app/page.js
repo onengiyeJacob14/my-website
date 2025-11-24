@@ -7,27 +7,31 @@ import AccessibilityWidget from "../components/AccessibilityWidget";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import {
+  FaRegNewspaper,
+  FaChevronLeft,
+  FaChevronRight,
+  FaLightbulb,
+} from "react-icons/fa";
 
 export default function Home() {
   // Simulated dynamic fetch of news snippets from "news-updates"
-  // In a real app, you might fetch from an API, e.g.:
-  // useEffect(() => {
-  //   fetch("/api/news-snippets")
-  //     .then((res) => res.json())
-  //     .then((data) => setCarouselData(data));
-  // }, []);
   const [carouselData, setCarouselData] = useState([
     {
       title: "New Company Jumpers",
       text: "Great news! The new company jumpers are now ready for collection. Please visit the office and see Jennifer for details.",
     },
     {
-      title: "Winter Supervision",
-      text: "Staff winter supervision sessions will take place on the 19th, 20th, and 21st of November 2025.",
+      title: "Referral Incentive",
+      text: "Don't forget—our referral incentive is still ongoing! Refer a new client and receive a £50 reward as a token of appreciation.",
     },
     {
-      title: "Referral Incentive",
-      text: "Don't forget our referral incentive is still ongoing! Refer a new client and receive a £50 reward as a token of appreciation",
+      title: "Winter Supervision",
+      text: "Staff winter supervision sessions will take place on the 19th, 20th, and 21st of November 2025. Please make yourselves available.",
+    },
+    {
+      title: "Staff Support & Escalation",
+      text: "For general queries, please use the office line or email. If you have any concerns that need to be discussed with the Registered Manager or Senior Management, please escalate directly to the office or through the WhatsApp group. For quality-related issues, contact the Quality Improvement Manager.",
     },
   ]);
 
@@ -80,8 +84,8 @@ export default function Home() {
               Compassion in Action{" "}
               <span className="relative inline-block">
                 Excellence
-                 {/* SVG stroke placed *below* the text */}
-                 <span className="absolute left-0 top-[calc(100%)] w-full h-[0.5em]">
+                {/* SVG stroke placed *below* the text */}
+                <span className="absolute left-0 top-[calc(100%)] w-full h-[0.5em]">
                   <svg
                     viewBox="0 0 300 20"
                     fill="none"
@@ -122,9 +126,9 @@ export default function Home() {
               style={{ textShadow: "1px 1px 3px rgba(0,0,0,0.8)" }}
             >
               Every hour, Living Glory Social Care delivers compassionate,
-              professional care to those who need it most. Through thousands
-              of moments of care each year, we transform hundreds of lives
-              every day in their own homes and communities across the UK.
+              professional care to those who need it most. Through thousands of
+              moments of care each year, we transform hundreds of lives every
+              day in their own homes and communities across the UK.
             </motion.p>
 
             {/* CTA Button */}
@@ -154,7 +158,12 @@ export default function Home() {
                 transition={{ duration: 0.8 }}
                 className="text-3xl md:text-4xl font-bold text-[#6818A5] mb-2 text-center"
               >
-                Living Glory Social Care Newsletter — Spring 2025 Edition
+                <span className="inline-flex items-center justify-center gap-2">
+                  <FaRegNewspaper className="text-[#6818A5]" />
+                  <span>
+                    Living Glory Social Care Newsletter — Winter 2025 Edition
+                  </span>
+                </span>
               </motion.h2>
               <p className="text-center mb-8 italic">
                 Supporting Independence, Enriching Lives
@@ -221,20 +230,25 @@ export default function Home() {
                 className="bg-[#fff3c2] p-4 rounded-md border border-yellow-300 mb-6 text-center"
               >
                 <h4 className="text-lg md:text-xl font-bold text-[#d67f0b] mb-2">
-                  Fun Fact
+                  <span className="inline-flex items-center justify-center gap-2">
+                    <FaLightbulb className="text-[#d67f0b]" />
+                    <span>Fun Fact</span>
+                  </span>
                 </h4>
                 <p className="text-[#b36b00]">
-                 Laughter Is Contagious, Share a giggle and watch stress melt Away
+                  Laughter is contagious – share a giggle and watch stress melt
+                  away. Take a moment today to smile with a colleague or client
+                  and brighten someone&apos;s day. 😊
                 </p>
               </motion.div>
 
               {/* Closing Note */}
               <p>
                 With exciting updates ahead, including training improvements,
-                E-MAR implementation, and enhanced compliance measures, we remain
-                committed to providing the highest standards of care. We look
-                forward to another season of growth, and we thank you for being
-                an essential part of Living Glory Social Care!
+                E-MAR implementation, and enhanced compliance measures, we
+                remain committed to providing the highest standards of care. We
+                look forward to another season of growth, and we thank you for
+                being an essential part of Living Glory Social Care!
               </p>
             </div>
           </section>
@@ -244,7 +258,10 @@ export default function Home() {
         <section className="py-8 px-4 md:px-8 lg:px-16 bg-white">
           <div className="max-w-6xl mx-auto">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
-              Latest Updates
+              <span className="inline-flex items-center gap-2">
+                <FaRegNewspaper className="text-purple-600" />
+                <span>Latest Updates</span>
+              </span>
             </h3>
             <div className="flex items-center space-x-4">
               {/* Prev Button */}
@@ -254,9 +271,10 @@ export default function Home() {
                     prev === 0 ? carouselData.length - 1 : prev - 1
                   )
                 }
-                className="bg-purple-600 text-white py-1 px-3 rounded hover:bg-purple-700 transition"
+                className="bg-purple-600 text-white py-1 px-3 rounded hover:bg-purple-700 transition flex items-center gap-1"
               >
-                Prev
+                <FaChevronLeft />
+                <span>Prev</span>
               </button>
               {/* Carousel Content */}
               <motion.div
@@ -279,9 +297,10 @@ export default function Home() {
                 onClick={() =>
                   setCarouselIndex((prev) => (prev + 1) % carouselData.length)
                 }
-                className="bg-purple-600 text-white py-1 px-3 rounded hover:bg-purple-700 transition"
+                className="bg-purple-600 text-white py-1 px-3 rounded hover:bg-purple-700 transition flex items-center gap-1"
               >
-                Next
+                <span>Next</span>
+                <FaChevronRight />
               </button>
             </div>
           </div>
