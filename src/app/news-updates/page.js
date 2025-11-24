@@ -7,6 +7,9 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import {
   FaMoneyBillWave,
+  FaCalendarAlt,
+  FaTshirt,
+  FaHandsHelping,
   FaUserClock,
   FaClipboardCheck,
   FaUserShield,
@@ -45,7 +48,7 @@ export default function NewsUpdatesPage() {
               className="bg-white border-l-4 border-pink-300 shadow p-4 rounded-md space-y-3 text-base md:text-lg text-gray-800 leading-relaxed"
             >
               <div className="flex items-center space-x-2">
-                <FaMoneyBillWave className="text-pink-500" />
+                <FaTshirt className="text-pink-500" />
                 <p className="font-semibold">
                   <strong>New Company Jumpers:</strong>
                 </p>
@@ -57,7 +60,7 @@ export default function NewsUpdatesPage() {
               </p>
 
               <div className="flex items-center space-x-2">
-                <FaClipboardCheck className="text-pink-500" />
+                <FaMoneyBillWave className="text-pink-500" />
                 <p className="font-semibold">
                   <strong>Referral Incentive:</strong>
                 </p>
@@ -68,7 +71,7 @@ export default function NewsUpdatesPage() {
               </p>
 
               <div className="flex items-center space-x-2">
-                <FaUserClock className="text-pink-500" />
+                <FaCalendarAlt className="text-pink-500" />
                 <p className="font-semibold">
                   <strong>Winter Supervision:</strong>
                 </p>
@@ -80,7 +83,7 @@ export default function NewsUpdatesPage() {
               </p>
 
               <div className="flex items-center space-x-2">
-                <FaHeartbeat className="text-pink-500" />
+                <FaHandsHelping className="text-pink-500" />
                 <p className="font-semibold">
                   <strong>Staff Support &amp; Escalation:</strong>
                 </p>
