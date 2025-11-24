@@ -72,6 +72,7 @@ export default function Home() {
               filter: "blur(2px) brightness(0.9)",
             }}
           />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/40" />
           <div className="relative z-10 p- 4 md:pl-6 md:pr-4 text-left text-white max-w-md md:max-w-xl">
             {/* Main Heading */}
             <motion.h1
@@ -128,7 +129,9 @@ export default function Home() {
               Every hour, Living Glory Social Care delivers compassionate,
               professional care to those who need it most. Through thousands of
               moments of care each year, we transform hundreds of lives every
-              day in their own homes and communities across the UK.
+              day in their own homes and communities across the UK. Even in the
+              coldest winter months, we bring warmth, reassurance and comfort
+              into every home we visit.
             </motion.p>
 
             {/* CTA Button */}
@@ -149,7 +152,7 @@ export default function Home() {
         {/* NEW SECTION: Newsletter / News */}
         <Link href="/news-updates" className="block">
           <section className="relative bg-[#ffe6f2] py-12 px-4 md:px-8 lg:px-16 text-gray-800">
-            <div className="max-w-6xl mx-auto rounded-md shadow-lg p-6 md:p-10 hover:shadow-2xl transition">
+            <div className="max-w-6xl mx-auto rounded-md shadow-lg p-6 md:p-10 hover:shadow-2xl transition bg-white/90 backdrop-blur-sm">
               {/* Title */}
               <motion.h2
                 initial={{ opacity: 0, y: -20 }}
@@ -165,8 +168,11 @@ export default function Home() {
                   </span>
                 </span>
               </motion.h2>
+              <p className="text-center mb-2 text-sm uppercase tracking-wide text-gray-600">
+                Winter 2025
+              </p>
               <p className="text-center mb-8 italic">
-                Supporting Independence, Enriching Lives
+                Supporting Independence, Enriching Lives ❄️
               </p>
 
               {/* Directors Greeting */}
@@ -238,13 +244,14 @@ export default function Home() {
                 <h4 className="text-lg md:text-xl font-bold text-[#d67f0b] mb-2">
                   <span className="inline-flex items-center justify-center gap-2">
                     <FaLightbulb className="text-[#d67f0b]" />
-                    <span>Fun Fact</span>
+                    <span>Winter Fun Fact</span>
                   </span>
                 </h4>
                 <p className="text-[#b36b00]">
-                  Laughter is contagious – share a giggle and watch stress melt
-                  away. Take a moment today to smile with a colleague or client
-                  and brighten someone&apos;s day. 😊
+                  On cold days, a shared laugh is like a warm blanket – it
+                  doesn&apos;t change the weather, but it makes everything feel a
+                  little brighter. Take a moment today to share a smile with a
+                  colleague or client and brighten someone&apos;s winter. 😊
                 </p>
               </motion.div>
 
@@ -263,10 +270,13 @@ export default function Home() {
         {/* CAROUSEL of Latest News */}
         <section className="py-8 px-4 md:px-8 lg:px-16 bg-white">
           <div className="max-w-6xl mx-auto">
+            <p className="text-sm uppercase tracking-wide text-gray-500 mb-1">
+              Winter 2025
+            </p>
             <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
               <span className="inline-flex items-center gap-2">
                 <FaRegNewspaper className="text-purple-600" />
-                <span>Latest Updates</span>
+                <span>Latest Winter Updates ❄️</span>
               </span>
             </h3>
             <div className="flex items-center space-x-4">
@@ -287,6 +297,9 @@ export default function Home() {
                 transition={{ duration: 0.5 }}
                 className="flex-grow text-center bg-gray-100 rounded p-6 shadow"
               >
+                <p className="text-xs uppercase tracking-wide text-gray-500 mb-1">
+                  Winter Highlight
+                </p>
                 <h4 className="text-xl font-semibold mb-2 text-gray-800">
                   {carouselData[carouselIndex].title}
                 </h4>
