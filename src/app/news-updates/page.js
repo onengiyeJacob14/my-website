@@ -191,7 +191,7 @@ export default function NewsUpdatesPage() {
           </div>
         </section>
 
-        {/* SECTION 3: Fun Fact & Recognition */}
+        {/* SECTION 3: Recognition – Carers of the Quarter */}
         <section className="py-12 px-4 md:px-8 lg:px-16 bg-[#fff9fa]">
           <div className="max-w-6xl mx-auto">
             <motion.h2
@@ -201,105 +201,88 @@ export default function NewsUpdatesPage() {
               transition={{ duration: 0.8 }}
               className="text-2xl md:text-3xl font-bold text-[#6818A5] mb-6"
             >
-              Fun Fact &amp; Recognition
+              Recognition – Carers of the Quarter
             </motion.h2>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 text-base md:text-lg text-gray-800 leading-relaxed">
-              {/* Left Column */}
-              <div className="space-y-6">
-                {/* Fun Fact */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8, delay: 0.1 }}
-                  className="bg-white p-4 shadow rounded-md"
-                >
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                    Fun Fact
-                  </h3>
-                  <p>
-                    Laughter is contagious... Share a giggle and watch stress
-                    melt away.
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              className="bg-white border-l-4 border-pink-300 shadow p-6 rounded-md text-base md:text-lg text-gray-800 leading-relaxed"
+            >
+              <p className="inline-block px-3 py-1 text-sm font-semibold rounded-full bg-[#fff8eb] text-[#6818A5] mb-4">
+                A big, warm thank you to our shining stars 🌟
+              </p>
+              <p className="mb-4">
+                Congratulations to our{" "}
+                <strong>Carers of the Quarter</strong>! Your kindness, patience
+                and dedication shine through in everything you do. You go the
+                extra mile for the people you support and for your colleagues,
+                and it does not go unnoticed. Thank you for bringing warmth,
+                joy, and excellence to Living Glory Social Care.
+              </p>
+
+              {/* Staff Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                {/* Farida */}
+                <div className="flex flex-col items-center text-center">
+                  <Image
+                    src="/documents/team/ortis.png"
+                    alt="Farida Parvin-Choudbury"
+                    width={100}
+                    height={100}
+                    className="rounded-full object-cover mb-2"
+                  />
+                  <p className="font-semibold text-gray-800">
+                    FARIDA PARVIN-CHOUDBURY
                   </p>
-                </motion.div>
+                  <p className="text-sm">
+                    For consistently delivering compassionate, person-centred
+                    care.
+                  </p>
+                </div>
+                {/* Hemalidevi */}
+                <div className="flex flex-col items-center text-center">
+                  <Image
+                    src="/documents/team/nora.png"
+                    alt="Hemalidevi Shah"
+                    width={100}
+                    height={100}
+                    className="rounded-full object-cover mb-2"
+                  />
+                  <p className="font-semibold text-gray-800">
+                    HEMALIDEVI SHAH
+                  </p>
+                  <p className="text-sm">
+                    For her calm, reassuring presence and professional
+                    approach.
+                  </p>
+                </div>
+                {/* Simon */}
+                <div className="flex flex-col items-center text-center">
+                  <Image
+                    src="/documents/team/kingsley.png"
+                    alt="Simon Osemuwehi"
+                    width={100}
+                    height={100}
+                    className="rounded-full object-cover mb-2"
+                  />
+                  <p className="font-semibold text-gray-800">
+                    SIMON OSEMUWEHI
+                  </p>
+                  <p className="text-sm">
+                    For going above and beyond to support both clients and
+                    colleagues.
+                  </p>
+                </div>
               </div>
 
-              {/* Right Column: Recognition */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 0.3 }}
-                className="bg-white p-4 shadow rounded-md"
-              >
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                  Recognition – Carers of the Quarter
-                </h3>
-                <p className="mb-4">
-                  Congratulations to our{" "}
-                  <strong>Carers of the Quarter</strong>! Your hard work,
-                  compassion, and dedication have truly set you apart. You are
-                  shining examples of excellent care and teamwork, inspiring
-                  others through your commitment and positive attitude. Well
-                  done — you&apos;ve made us all proud!
-                </p>
-                {/* Staff Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  {/* Farida */}
-                  <div className="flex flex-col items-center">
-                    <Image
-                      src="/documents/team/ortis.png"
-                      alt="Farida Parvin-Choudbury"
-                      width={100}
-                      height={100}
-                      className="rounded-full object-cover mb-2"
-                    />
-                    <p className="font-semibold text-gray-800">
-                      FARIDA PARVIN-CHOUDBURY
-                    </p>
-                    <p className="text-sm text-center">
-                      For consistently delivering compassionate, person-centred
-                      care.
-                    </p>
-                  </div>
-                  {/* Hemalidevi */}
-                  <div className="flex flex-col items-center">
-                    <Image
-                      src="/documents/team/nora.png"
-                      alt="Hemalidevi Shah"
-                      width={100}
-                      height={100}
-                      className="rounded-full object-cover mb-2"
-                    />
-                    <p className="font-semibold text-gray-800">
-                      HEMALIDEVI SHAH
-                    </p>
-                    <p className="text-sm text-center">
-                      For her calm, reassuring presence and professional
-                      approach.
-                    </p>
-                  </div>
-                  {/* Simon */}
-                  <div className="flex flex-col items-center">
-                    <Image
-                      src="/documents/team/kingsley.png"
-                      alt="Simon Osemuwehi"
-                      width={100}
-                      height={100}
-                      className="rounded-full object-cover mb-2"
-                    />
-                    <p className="font-semibold text-gray-800">
-                      SIMON OSEMUWEHI
-                    </p>
-                    <p className="text-sm text-center">
-                      For going above and beyond to support both clients and
-                      colleagues.
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
+              <p className="mt-4">
+                We are so proud of you all — thank you for being such an
+                important part of the Living Glory family. 💜
+              </p>
+            </motion.div>
           </div>
         </section>
 
@@ -430,7 +413,7 @@ export default function NewsUpdatesPage() {
                   </li>
                   <li>
                     Doyin Ogunmeru (Care Co-ordinator / Payroll Manager)
-                    &mdash; doyin.ogunmeru@livingglorysocialcare.com
+                    &mdash; doyin.ogmeru@livingglorysocialcare.com
                   </li>
                   <li>
                     Osaretin Alile (HR and Training Co-ordinator) &mdash;
