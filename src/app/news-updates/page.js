@@ -405,27 +405,87 @@ export default function NewsUpdatesPage() {
                 <p className="font-semibold mb-2">Reference Enquiries:</p>
                 <p className="mb-6">referencing@livingglorysocialcare.com</p>
 
-                <p className="font-semibold mb-2">Management Contacts:</p>
-                <ul className="space-y-2">
-                  <li>
-                    Jessica Idele (Quality Improvement Manager / Field Care
-                    Supervisor) &mdash; jessica.idele@livingglorysocialcare.com
+                <p className="font-semibold mb-3">Management Contacts:</p>
+                <p className="text-sm text-gray-600 mb-3">
+                  Please contact the relevant person below for support with
+                  staffing, quality, HR, payroll or care co-ordination.
+                </p>
+
+                {/* Quality & Training */}
+                <p className="font-semibold text-gray-800 mt-3 mb-2">
+                  Quality &amp; Training
+                </p>
+                <ul className="space-y-3">
+                  <li className="bg-white rounded-md border border-gray-200 p-3">
+                    <p className="font-semibold text-gray-900">
+                      👤 Jessica Idele
+                    </p>
+                    <p className="text-sm text-gray-700">
+                      💼 Quality Improvement Manager / Field Care Supervisor
+                    </p>
+                    <p className="text-sm text-purple-800 break-all">
+                      ✉️ jessica.idele@livingglorysocialcare.com
+                    </p>
                   </li>
-                  <li>
-                    Doyin Ogunmeru (Care Co-ordinator / Payroll Manager)
-                    &mdash; doyin.ogmeru@livingglorysocialcare.com
+
+                  <li className="bg-white rounded-md border border-gray-200 p-3">
+                    <p className="font-semibold text-gray-900">
+                      👤 Osaretin Alile
+                    </p>
+                    <p className="text-sm text-gray-700">
+                      💼 HR and Training Co-ordinator
+                    </p>
+                    <p className="text-sm text-purple-800 break-all">
+                      ✉️ osaretin.alile@livingglorysocialcare.com
+                    </p>
                   </li>
-                  <li>
-                    Osaretin Alile (HR and Training Co-ordinator) &mdash;
-                    osaretin.alile@livingglorysocialcare.com
+                </ul>
+
+                {/* Care Coordination & Payroll */}
+                <p className="font-semibold text-gray-800 mt-4 mb-2">
+                  Care Co-ordination &amp; Payroll
+                </p>
+                <ul className="space-y-3">
+                  <li className="bg-white rounded-md border border-gray-200 p-3">
+                    <p className="font-semibold text-gray-900">
+                      👤 Doyin Ogunmeru
+                    </p>
+                    <p className="text-sm text-gray-700">
+                      💼 Care Co-ordinator / Payroll Manager
+                    </p>
+                    <p className="text-sm text-purple-800 break-all">
+                      ✉️ doyin.ogunmeru@livingglorysocialcare.com
+                    </p>
                   </li>
-                  <li>
-                    Jennifer Odighbor (Care Monitoring and Invoicing Officer)
-                    &mdash; jennifer.odighbor@livingglorysocialcare.com
+                </ul>
+
+                {/* Staffing & Invoicing */}
+                <p className="font-semibold text-gray-800 mt-4 mb-2">
+                  Staffing &amp; Invoicing
+                </p>
+                <ul className="space-y-3">
+                  <li className="bg-white rounded-md border border-gray-200 p-3">
+                    <p className="font-semibold text-gray-900">
+                      👤 Jennifer Odighbor
+                    </p>
+                    <p className="text-sm text-gray-700">
+                      💼 Care Monitoring and Invoicing Officer
+                    </p>
+                    <p className="text-sm text-purple-800 break-all">
+                      ✉️ jennifer.odighbor@livingglorysocialcare.com
+                    </p>
                   </li>
-                  <li>
-                    Samuel Ekun (Staffing Co-Ordinator and Invoicing Officer)
-                    &mdash; samuel.ekun@livingglorysocialcare.com
+
+                  <li className="bg-white rounded-md border border-gray-200 p-3">
+                    <p className="font-semibold text-gray-900">
+                      👤 Samuel Ekun
+                    </p>
+                    <p className="text-sm text-gray-700">
+                      💼 Staffing Co-ordinator and Invoicing Officer
+                    </p>
+                    <p className="text-sm text-purple-800 break-all">
+                      ✉️ samuel.ekun@livingglorysocialcare.com
+                    </p>
                   </li>
                 </ul>
               </motion.div>
