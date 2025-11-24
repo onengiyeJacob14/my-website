@@ -1,19 +1,18 @@
 import "./globals.css";
-// src/app/layout.js
+
 export const metadata = {
-  title: 'Living Glory Social Care',
-  description: 'Providing compassionate domiciliary care since 2012.',
+  title: "Living Glory Social Care",
+  description: "Providing compassionate domiciliary care since 2012.",
   icons: {
-    icon: "/livingglory-logo-c.png", // or .ico if you have that
+    icon: "/livingglory-logo-c.png",
   },
-// Add the line below:
-viewport: 'width=device-width, initial-scale=1.0',
+  viewport: "width=device-width, initial-scale=1.0",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-white text-gray-900">
         {children}
       </body>
     </html>
