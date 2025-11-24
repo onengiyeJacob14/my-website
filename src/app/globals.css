@@ -1,10 +1,22 @@
 @import "tailwindcss";
 
-
-
-
 :root {
   --primary-gradient: linear-gradient(45deg, #6818A5, #8B2FC9);
+}
+
+/* Global layout + scroll behaviour */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 /* Example button style using the gradient */
@@ -19,10 +31,12 @@
 .btn-primary:hover {
   filter: brightness(1.1);
 }
-/* Example high-contrast styles */
+
+/* High-contrast mode: simple global invert */
 .high-contrast {
   filter: invert(1) hue-rotate(180deg);
 }
+
 @keyframes shinyGradient {
   0% {
     background-position: 0% 50%;
@@ -34,11 +48,3 @@
     background-position: 0% 50%;
   }
 }
-/* Or a more targeted approach:
-.high-contrast body,
-.high-contrast .some-container {
-  background-color: #000 !important;
-  color: #fff !important;
-}
-*/
-
