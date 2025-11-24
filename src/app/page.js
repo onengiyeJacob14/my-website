@@ -172,15 +172,21 @@ export default function Home() {
               {/* Directors Greeting */}
               <div className="mb-8">
                 <h3 className="text-2xl font-semibold mb-4">
-                  Greetings from Our Directors
+                  From the Directors&apos; Desk
                 </h3>
+                <p className="mb-3">
+                  Dear Team, as we journey through the winter months, we want to
+                  pause and recognise your continued dedication, resilience and
+                  compassion. The colder, darker days can be challenging for
+                  both staff and clients, yet you consistently go above and
+                  beyond to deliver safe, person-centred care.
+                </p>
                 <p>
-                  Dear Team, As we step into a new season, we want to take a
-                  moment to thank each and every one of you for your hard work,
-                  dedication and impact in providing high-quality care. Your
-                  efforts do not go unnoticed, and we truly appreciate the
-                  positive impact you make in the lives of our clients every
-                  day.
+                  Thank you for the warmth, professionalism and kindness you
+                  bring to every visit, every call and every interaction. You
+                  are the heart of Living Glory Social Care, and we are truly
+                  grateful for the difference you make in our clients&apos; lives
+                  every single day.
                 </p>
               </div>
 
@@ -266,11 +272,7 @@ export default function Home() {
             <div className="flex items-center space-x-4">
               {/* Prev Button */}
               <button
-                onClick={() =>
-                  setCarouselIndex((prev) =>
-                    prev === 0 ? carouselData.length - 1 : prev - 1
-                  )
-                }
+                onClick={handlePrev}
                 className="bg-purple-600 text-white py-1 px-3 rounded hover:bg-purple-700 transition flex items-center gap-1"
               >
                 <FaChevronLeft />
@@ -294,9 +296,7 @@ export default function Home() {
               </motion.div>
               {/* Next Button */}
               <button
-                onClick={() =>
-                  setCarouselIndex((prev) => (prev + 1) % carouselData.length)
-                }
+                onClick={handleNext}
                 className="bg-purple-600 text-white py-1 px-3 rounded hover:bg-purple-700 transition flex items-center gap-1"
               >
                 <span>Next</span>
