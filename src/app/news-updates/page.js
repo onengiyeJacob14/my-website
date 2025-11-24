@@ -228,7 +228,7 @@ export default function NewsUpdatesPage() {
                 {/* Farida */}
                 <div className="flex flex-col items-center text-center">
                   <Image
-                    src="/documents/team/ortis.png"
+                    src="/documents/team/Farida.png"
                     alt="Farida Parvin-Choudbury"
                     width={100}
                     height={100}
@@ -245,7 +245,7 @@ export default function NewsUpdatesPage() {
                 {/* Hemalidevi */}
                 <div className="flex flex-col items-center text-center">
                   <Image
-                    src="/documents/team/nora.png"
+                    src="/documents/team/Shah.png"
                     alt="Hemalidevi Shah"
                     width={100}
                     height={100}
@@ -262,7 +262,7 @@ export default function NewsUpdatesPage() {
                 {/* Simon */}
                 <div className="flex flex-col items-center text-center">
                   <Image
-                    src="/documents/team/kingsley.png"
+                    src="/documents/team/Simon.png"
                     alt="Simon Osemuwehi"
                     width={100}
                     height={100}
