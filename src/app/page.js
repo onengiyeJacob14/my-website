@@ -18,16 +18,16 @@ export default function Home() {
   // }, []);
   const [carouselData, setCarouselData] = useState([
     {
-      title: "Office Spot Checks",
-      text: "Office staff will conduct spot checks to maintain quality. Thanks for your cooperation!",
+      title: "New Company Jumpers",
+      text: "Great news! The new company jumpers are now ready for collection. Please visit the office and see Jennifer for details.",
     },
     {
-      title: "Training Completion",
-      text: "Congrats to everyone for completing training! E-MAR implementation is fully live.",
+      title: "Winter Supervision",
+      text: "Staff winter supervision sessions will take place on the 19th, 20th, and 21st of November 2025.",
     },
     {
-      title: "Away Days",
-      text: "We\'re introducing Away Days to help staff unwind, connect, and recharge outside work.",
+      title: "Referral Incentive",
+      text: "Don't forget our referral incentive is still ongoing! Refer a new client and receive a £50 reward as a token of appreciation",
     },
   ]);
 
@@ -224,10 +224,7 @@ export default function Home() {
                   Fun Fact
                 </h4>
                 <p className="text-[#b36b00]">
-                  Did you know that a single act of kindness can significantly boost
-                  mental well-being? Whether it\'s a compliment, a smile, or a helping
-                  hand, your support can make a big difference to our clients and your
-                  colleagues!
+                 Laughter Is Contagious, Share a giggle and watch stress melt Away
                 </p>
               </motion.div>
 
